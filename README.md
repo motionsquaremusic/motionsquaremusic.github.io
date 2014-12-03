@@ -15,7 +15,9 @@ Index Page:
         - changing by using 'Modal' form bootstrap that can add text and soundcloud code.
     'More about...' section
         - change to 2 columns - text on the left - picture on right(leave it blank now, I'll do it)
-        
+    Footer
+        - 2 columns = Contact Us & Subscribe
+    
 ===========================
 
 Done:
