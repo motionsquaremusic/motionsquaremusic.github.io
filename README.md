@@ -1,11 +1,21 @@
 motionsquaremusic.github.io
 ===========================
-What I want is:
+
+To do:
+
 3 pages (not including index)
     - About - use that template
     - Serivces - use single-post.html but delete right column and adjust context section to centered.
     - Free Stuff - use single-project.html
+    - Sample Work - Use same as services template
     
-Change the photo code in index page
-    - original is just make photo bigger.
-    - changing by using 'Modal' form bootstrap that can add text and code.
+Index Page:
+    Change the photo code in index page
+        - original is just make photo bigger.
+        - changing by using 'Modal' form bootstrap that can add text and soundcloud code.
+    'More about...' section
+        - change to 2 columns - text on the left - picture on right(leave it blank now, I'll do it)
+        
+===========================
+
+Done:
