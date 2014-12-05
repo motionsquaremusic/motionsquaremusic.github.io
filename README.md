@@ -7,7 +7,7 @@ To do:
 5 pages (not including index)
     - About(about.html) - use that template
     - Serivces & Pricing(services.html) - use single-post.html but delete right column and adjust context section to centered.
-    - Portfolio(showcase.html) - Use same as services template
+    - Showcase(showcase.html) - Use same as services template
     - Music Collection(collection.html) - grid page show music playlist
     - Free Stuffs(freestuff.html) - use single-project.html
     
