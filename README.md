@@ -4,11 +4,14 @@ Original Theme from http://www.blacktie.co/2014/05/solid-multipurpose-theme/
 
 To do:
 
-3 pages (not including index)
+5 pages (not including index)
     - About - use that template
     - Serivces - use single-post.html but delete right column and adjust context section to centered.
-    - Free Stuff - use single-project.html
-    - Sample Work - Use same as services template
+    - Portfolio - Use same as services template
+    - Collection - grid page show music playlist
+    - Free Stuffs - use single-project.html
+    
+        - Menubar in order // Home / About / Pricing / Portfolio / See More(Dropdown): All Collection, Free Stuffs /
     
 Index Page:
     Change the photo code in index page
