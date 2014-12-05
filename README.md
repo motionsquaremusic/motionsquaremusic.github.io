@@ -5,11 +5,11 @@ Original Theme from http://www.blacktie.co/2014/05/solid-multipurpose-theme/
 To do:
 
 5 pages (not including index)
-    - About - use that template
-    - Serivces - use single-post.html but delete right column and adjust context section to centered.
-    - Portfolio - Use same as services template
-    - Collection - grid page show music playlist
-    - Free Stuffs - use single-project.html
+    - About(about.html) - use that template
+    - Serivces(services.html) - use single-post.html but delete right column and adjust context section to centered.
+    - Portfolio(showcase.html) - Use same as services template
+    - Music Collection(collection.html) - grid page show music playlist
+    - Free Stuffs(freestuff.html) - use single-project.html
     
         - Menubar in order // Home / About / Pricing / Portfolio / See More(Dropdown): All Collection, Free Stuffs /
     
