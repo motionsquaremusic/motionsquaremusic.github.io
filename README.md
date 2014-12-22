@@ -25,3 +25,8 @@ Index Page:
 Done:
 - Serivces & Pricing(services.html) - use single-post.html but delete right column and adjust context section to centered.
 - Showcase(showcase.html) - Use same as services template
+
+===========================
+
+MISC GIT cmd:
+https://docs.google.com/document/d/1BNcMGodoQtwg8wl2vruaZ6spvxhhVTErY8pGygE2nwA/edit
