@@ -5,9 +5,10 @@ Original Theme from http://www.blacktie.co/2014/05/solid-multipurpose-theme/
 To do:
 
 5 pages (not including index)
-About(about.html) - use that template
-Music Collection(collection.html) - grid page show music playlist
-Free Stuffs(freestuff.html) - use single-project.html
+About(about.html)
+- Music Collection(collection.html) - grid page show music playlist
+- Free Stuffs(freestuff.html) - use single-project.html
+- Fix Thai Font
 
         - Menubar in order // Home / About / Pricing / Portfolio / See More(Dropdown): All Collection, Free Stuffs /
 
