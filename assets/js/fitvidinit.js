@@ -1,0 +1,3 @@
+$(function(){
+	$(".youtube-showcase").fitVids();	
+});

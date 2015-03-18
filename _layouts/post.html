@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div id="blue">
+    <div class="container">
+        <div class="row">
+			<header class="post-header">
+				<h3 class="post-title">{{ page.title }}</h3>
+			    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • By {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  			</header>
+        </div><!-- /row -->
+    </div><!-- /container -->
+</div>
+
+<div class="post">
+  <article class="post-content">
+    <div class="container mtb">
+      {{ content }}
+    </div>
+  </article>
+
+</div>

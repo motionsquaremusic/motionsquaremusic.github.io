@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blogs
+active: blogs
+---
+
+<div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>BLOGS</h3>
+        </div><!-- /row -->
+    </div><!-- /container -->
+</div>
+
+<div class="container mtb">
+	<div id="blog-array">
+		<ul class="list-unstyled">
+		  {% for post in site.posts %}
+		    <li>
+		      <a href="{{ post.url | prepend: site.url }}"><h2>{{ post.title }}</h2></a> 
+		      Posted at: {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • By: {{ post.author }}{% endif %}
+		      {{post.excerpt}} 
+		    </li>
+		  {% endfor %}
+		</ul>
+	</div>
+</div>
