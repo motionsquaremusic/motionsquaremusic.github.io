@@ -464,3 +464,51 @@ csmall2 {
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
+
+/*composer*/
+.composerItem{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/*ul list */
+#hori-list li{
+	display: inline;
+	list-style-type: none;
+	padding: 10px 10px 10px 10px;
+}
+
+/*********************************************
+ GRID ITEM: PORTFOLIO GRID
+**********************************************/
+
+.portfolioitem{
+    /*margin-bottom: 20px;*/
+    /*http://css-tricks.com/fighting-the-space-between-inline-block-elements/*/
+    display: inline-block;
+    /*margin-right: -4px;*/
+    position: relative;
+}
+
+.portfolioitem a{
+    color:#ffffff;
+}
+
+.innerdivoverlay {
+	position: absolute;
+	display: none;
+	top: 60px;
+	left: 0;
+
+	padding: 0 10px 10px 10px;
+	background-color: #00b3fe;
+	z-index: 1;
+}
+
+	/*********************************************
+	MODAL
+	**********************************************/
+
+	#portfolio-modal-infographics,#portfolio-modal-altrock,#portfolio-modal-altrock{
+		display: none;
+	}

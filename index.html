@@ -1,63 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--user-scalable=no-->
-    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Motion Square Music Demo</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="assets/js/modernizr.js"></script>
-</head>
-
-<body>
-
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">MOTION SQUARE MUSIC</a>
-        </div>
-        <div class="navbar-collapse collapse navbar-right">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="services.html">SERVICE & PRICING</a></li>
-                <li><a href="showcase.html">SHOWCASE</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">SEE MORE <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="collection.html">MUSIC COLLECTION</a></li>
-                        <li><a href="freestuff.html">FREE STUFFS</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</div>
+---
+layout: default
+title: Home
+active: index
+---
 
 <!-- *****************************************************************************************************************
  HEADERWRAP
@@ -67,10 +12,10 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <br><h1>Motion Square Music</h1>
-                <h5>Stock music for Game, Film & Multimedia</h5><br>
+                <h5>Stock music for Game, Film &amp; Multimedia</h5><br>
             </div>
             <div class="col-lg-8 col-lg-offset-2 himg">
-                <img src="assets/img/desktop.png" class="img-responsive">
+                <img src="{{"assets/img/desktop.png" | prepend: site.url }}" class="img-responsive">
             </div>
         </div><!-- /row -->
     </div><!-- /container -->
@@ -97,10 +42,10 @@
                 ด้วยราคาที่เป็นมิตรทำให้คุณเองก็สามารถได้ใช้งานดีๆที่ช่วยยกระดับโปรเจ็ค ของคุณ แม้จะมีงบการเงินที่จำกัด
                 เริ่มต้นที่ 350 บาท
             </p>
-            <br/><a href="about.html" class="btn btn-theme">Know more about us</a>
+            <br/><a href="about" class="btn btn-theme">Know more about us</a>
         </div>
         <div class="col-lg-6">
-            <img class="img-responsive" src="assets/img/agency.jpg" alt="">
+            <img class="img-responsive" src="{{"assets/img/agency.jpg" | prepend: site.url }}" alt="">
         </div>
     </div><!--/row -->
 </div><!--/container -->
@@ -115,14 +60,14 @@
         <div class="recentitems portfolio">
             <div class="portfolio-item graphic-design">
                 <div class="he-wrap tpl6">
-                    <img src="assets/img/portfolio/portfolio_09.jpg" alt="">
+                    <img src="{{"assets/img/portfolio/portfolio_09.jpg" | prepend: site.url }}" alt="">
 
                     <div class="he-view">
                         <div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                            <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_09.jpg" class="dmbutton a2"
+                            <a data-rel="prettyPhoto" href="{{"assets/img/portfolio/portfolio_09.jpg" | prepend: site.url }}" class="dmbutton a2"
                                data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                            <a href="freestuff.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            <a href="freestuffs" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                         </div><!-- he bg -->
                     </div><!-- he view -->
                 </div><!-- he wrap -->
@@ -130,14 +75,14 @@
 
             <div class="portfolio-item web-design">
                 <div class="he-wrap tpl6">
-                    <img src="assets/img/portfolio/portfolio_02.jpg" alt="">
+                    <img src="{{"assets/img/portfolio/portfolio_02.jpg" | prepend: site.url }}" alt="">
 
                     <div class="he-view">
                         <div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">A Web Design Item</h3>
-                            <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_02.jpg" class="dmbutton a2"
+                            <a data-rel="prettyPhoto" href="{{"assets/img/portfolio/portfolio_02.jpg" | prepend: site.url }}" class="dmbutton a2"
                                data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                            <a href="freestuff.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            <a href="freestuffs" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                         </div><!-- he bg -->
                     </div><!-- he view -->
                 </div><!-- he wrap -->
@@ -145,14 +90,14 @@
 
             <div class="portfolio-item graphic-design">
                 <div class="he-wrap tpl6">
-                    <img src="assets/img/portfolio/portfolio_03.jpg" alt="">
+                    <img src="{{"assets/img/portfolio/portfolio_03.jpg" | prepend: site.url }}" alt="">
 
                     <div class="he-view">
                         <div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                            <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_03.jpg" class="dmbutton a2"
+                            <a data-rel="prettyPhoto" href="{{"assets/img/portfolio/portfolio_03.jpg" | prepend: site.url }}" class="dmbutton a2"
                                data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                            <a href="freestuff.html" class="dmbutton a2" data-animate="fadeInUp"><i
+                            <a href="freestuffs" class="dmbutton a2" data-animate="fadeInUp"><i
                                     class="fa fa-link"></i></a>
                         </div><!-- he bg -->
                     </div><!-- he view -->
@@ -161,14 +106,14 @@
 
             <div class="portfolio-item graphic-design">
                 <div class="he-wrap tpl6">
-                    <img src="assets/img/portfolio/portfolio_04.jpg" alt="">
+                    <img src="{{"assets/img/portfolio/portfolio_04.jpg" | prepend: site.url }}" alt="">
 
                     <div class="he-view">
                         <div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                            <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_04.jpg" class="dmbutton a2"
+                            <a data-rel="prettyPhoto" href="{{"assets/img/portfolio/portfolio_04.jpg" | prepend: site.url }}" class="dmbutton a2"
                                data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                            <a href="freestuff.html" class="dmbutton a2" data-animate="fadeInUp"><i
+                            <a href="freestuffs" class="dmbutton a2" data-animate="fadeInUp"><i
                                     class="fa fa-link"></i></a>
                         </div><!-- he bg -->
                     </div><!-- he view -->
@@ -177,14 +122,14 @@
 
             <div class="portfolio-item books">
                 <div class="he-wrap tpl6">
-                    <img src="assets/img/portfolio/portfolio_05.jpg" alt="">
+                    <img src="{{"assets/img/portfolio/portfolio_05.jpg" | prepend: site.url }}" alt="">
 
                     <div class="he-view">
                         <div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
-                            <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_05.jpg" class="dmbutton a2"
+                            <a data-rel="prettyPhoto" href="{{"assets/img/portfolio/portfolio_05.jpg" | prepend: site.url }}" class="dmbutton a2"
                                data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                            <a href="freestuff.html" class="dmbutton a2" data-animate="fadeInUp"><i
+                            <a href="freestuffs" class="dmbutton a2" data-animate="fadeInUp"><i
                                     class="fa fa-link"></i></a>
                         </div><!-- he bg -->
                     </div><!-- he view -->
@@ -193,14 +138,14 @@
 
             <div class="portfolio-item graphic-design">
                 <div class="he-wrap tpl6">
-                    <img src="assets/img/portfolio/portfolio_06.jpg" alt="">
+                    <img src="{{"assets/img/portfolio/portfolio_06.jpg" | prepend: site.url }}" alt="">
 
                     <div class="he-view">
                         <div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                            <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_06.jpg" class="dmbutton a2"
+                            <a data-rel="prettyPhoto" href="{{"assets/img/portfolio/portfolio_06.jpg" | prepend: site.url }}" class="dmbutton a2"
                                data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                            <a href="freestuff.html" class="dmbutton a2" data-animate="fadeInUp"><i
+                            <a href="freestuffs" class="dmbutton a2" data-animate="fadeInUp"><i
                                     class="fa fa-link"></i></a>
                         </div><!-- he bg -->
                     </div><!-- he view -->
@@ -209,14 +154,14 @@
 
             <div class="portfolio-item books">
                 <div class="he-wrap tpl6">
-                    <img src="assets/img/portfolio/portfolio_07.jpg" alt="">
+                    <img src="{{"assets/img/portfolio/portfolio_07.jpg" | prepend: site.url }}" alt="">
 
                     <div class="he-view">
                         <div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
-                            <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_07.jpg" class="dmbutton a2"
+                            <a data-rel="prettyPhoto" href="{{"assets/img/portfolio/portfolio_07.jpg" | prepend: site.url }}" class="dmbutton a2"
                                data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                            <a href="freestuff.html" class="dmbutton a2" data-animate="fadeInUp"><i
+                            <a href="freestuffs" class="dmbutton a2" data-animate="fadeInUp"><i
                                     class="fa fa-link"></i></a>
                         </div><!-- he bg -->
                     </div><!-- he view -->
@@ -225,14 +170,14 @@
 
             <div class="portfolio-item graphic-design">
                 <div class="he-wrap tpl6">
-                    <img src="assets/img/portfolio/portfolio_08.jpg" alt="">
+                    <img src="{{"assets/img/portfolio/portfolio_08.jpg" | prepend: site.url }}" alt="">
 
                     <div class="he-view">
                         <div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
-                            <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_08.jpg" class="dmbutton a2"
+                            <a data-rel="prettyPhoto" href="{{"assets/img/portfolio/portfolio_08.jpg" | prepend: site.url }}" class="dmbutton a2"
                                data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                            <a href="freestuff.html" class="dmbutton a2" data-animate="fadeInUp"><i
+                            <a href="freestuffs" class="dmbutton a2" data-animate="fadeInUp"><i
                                     class="fa fa-link"></i></a>
                         </div><!-- he bg -->
                     </div><!-- he view -->
@@ -241,14 +186,14 @@
 
             <div class="portfolio-item web-design">
                 <div class="he-wrap tpl6">
-                    <img src="assets/img/portfolio/portfolio_01.jpg" alt="">
+                    <img src="{{"assets/img/portfolio/portfolio_01.jpg" | prepend: site.url }}" alt="">
 
                     <div class="he-view">
                         <div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">A Web Design Item</h3>
-                            <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_01.jpg" class="dmbutton a2"
+                            <a data-rel="prettyPhoto" href="{{"assets/img/portfolio/portfolio_01.jpg" | prepend: site.url }}" class="dmbutton a2"
                                data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                            <a href="freestuff.html" class="dmbutton a2" data-animate="fadeInUp"><i
+                            <a href="freestuffs" class="dmbutton a2" data-animate="fadeInUp"><i
                                     class="fa fa-link"></i></a>
                         </div><!-- he bg -->
                     </div><!-- he view -->
@@ -257,14 +202,14 @@
 
             <div class="portfolio-item books">
                 <div class="he-wrap tpl6">
-                    <img src="assets/img/portfolio/portfolio_10.jpg" alt="">
+                    <img src="{{"assets/img/portfolio/portfolio_10.jpg" | prepend: site.url }}" alt="">
 
                     <div class="he-view">
                         <div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">A Book Design Item</h3>
-                            <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_10.jpg" class="dmbutton a2"
+                            <a data-rel="prettyPhoto" href="{{"assets/img/portfolio/portfolio_10.jpg" | prepend: site.url }}" class="dmbutton a2"
                                data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                            <a href="freestuff.html" class="dmbutton a2" data-animate="fadeInUp"><i
+                            <a href="freestuffs" class="dmbutton a2" data-animate="fadeInUp"><i
                                     class="fa fa-link"></i></a>
                         </div><!-- he bg -->
                     </div><!-- he view -->
@@ -308,7 +253,7 @@
             </div>
         </div>
         <div class="row centered">
-            <br><a href="services.html" class="btn btn-theme">More Service Information</a>
+            <br><a href="services" class="btn btn-theme">More Service Information</a>
         </div>
     </div><!--/sub container -->
 </div><!--/service -->
@@ -334,56 +279,3 @@
         </div><!--/row -->
     </div><!--/container -->
 </div><!--/twrap -->
-
-<!-- *****************************************************************************************************************
- FOOTER
- ***************************************************************************************************************** -->
-<div id="footerwrap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <h4>Contact Us</h4>
-                <div class="hline-w"></div>
-                <a class="btn btn-info" href="mailto:stockmusicth@gmail.com">stockmusicth@gmail.com</a>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <h4>Subscribe</h4>
-                <div class="hline-w"></div>
-                <div id="mc_embed_signup">
-                    <form action="http://motionsquaremusic.us3.list-manage1.com/subscribe/post?u=7e6e5e435a36bf94e237157f3&amp;id=96565976df"
-                          method="post"
-                          id="mc-embedded-subscribe-form"
-                          name="mc-embedded-subscribe-form"
-                          class="form-inline"
-                          target="_blank"
-                          novalidate="">
-                        <div class="form-group">
-                            <label for="mce-EMAIL"></label>
-                            <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Enter email address" required="">
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;">
-                                <input type="text" name="b_7e6e5e435a36bf94e237157f3_96565976df" value="">
-                            </div>
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div><!--/row -->
-    </div><!--/container -->
-</div><!--/footerwrap -->
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/retina-1.1.0.js"></script>
-<script src="assets/js/jquery.hoverdir.js"></script>
-<script src="assets/js/jquery.hoverex.min.js"></script>
-<script src="assets/js/jquery.prettyPhoto.js"></script>
-<script src="assets/js/jquery.isotope.min.js"></script>
-<script src="assets/js/custom.js"></script>
-
-</body>
-</html>
