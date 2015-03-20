@@ -3,10 +3,10 @@
   <channel>
     <title>MotionSquareMusic-Jekyll</title>
     <description>Stock music for Game, Film &amp; Multimedia</description>
-    <link>http://192.168.1.10:4000/</link>
-    <atom:link href="http://192.168.1.10:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 Mar 2015 12:23:45 +0700</pubDate>
-    <lastBuildDate>Fri, 20 Mar 2015 12:23:45 +0700</lastBuildDate>
+    <link>http://motionsquaremusic.github.io/</link>
+    <atom:link href="http://motionsquaremusic.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 20 Mar 2015 14:57:56 +0700</pubDate>
+    <lastBuildDate>Fri, 20 Mar 2015 14:57:56 +0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -15,9 +15,9 @@
 
 &lt;p&gt;Morbi sit amet est luctus, gravida nunc ut, molestie sem. Morbi eget purus pellentesque, placerat mauris quis, facilisis quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur fringilla, massa cursus suscipit &lt;strong&gt;&lt;em&gt;consectetur, massa erat varius quam,&lt;/em&gt;&lt;/strong&gt; vehicula aliquet magna felis sit amet arcu. Nulla faucibus nec ipsum sit amet porta. Nulla blandit nisl sapien, et vulputate ante ultrices a. Sed ac rhoncus ipsum. Praesent finibus placerat sapien, ut mollis nulla commodo dictum. Fusce a aliquam lectus, non dapibus elit.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://192.168.1.10:4000/public/img/2014-09-05_00001.jpg&quot; alt=&quot;The picture1&quot; /&gt; &lt;strong&gt;Curabitur vel risus a est mollis congue et ut sem. Curabitur ex lectus, scelerisque in leo ac, bibendum tincidunt nibh. Cras vel aliquam diam, sit amet convallis lorem. Nulla condimentum dui ut est lacinia, et semper velit porta. Aliquam erat volutpat. Nam imperdiet vehicula lacus, ut rutrum mauris. Pellentesque ac nibh tempus, suscipit nibh nec, gravida mauris. Pellentesque nec lobortis magna. Aliquam viverra in urna eu efficitur. Nullam ut blandit risus. Pellentesque posuere dapibus ultrices.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://motionsquaremusic.github.io/public/img/2014-09-05_00001.jpg&quot; alt=&quot;The picture1&quot; /&gt; &lt;strong&gt;Curabitur vel risus a est mollis congue et ut sem. Curabitur ex lectus, scelerisque in leo ac, bibendum tincidunt nibh. Cras vel aliquam diam, sit amet convallis lorem. Nulla condimentum dui ut est lacinia, et semper velit porta. Aliquam erat volutpat. Nam imperdiet vehicula lacus, ut rutrum mauris. Pellentesque ac nibh tempus, suscipit nibh nec, gravida mauris. Pellentesque nec lobortis magna. Aliquam viverra in urna eu efficitur. Nullam ut blandit risus. Pellentesque posuere dapibus ultrices.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://192.168.1.10:4000/public/img/2014-09-29_00006.jpg&quot; alt=&quot;Images2&quot; /&gt; Donec turpis sem, varius sed imperdiet nec, posuere eget felis. Morbi dolor odio, hendrerit vitae iaculis vel, porta eget felis. Maecenas facilisis quam elit, quis dapibus ligula malesuada id. Ut hendrerit libero quis libero aliquam, eget finibus dolor tincidunt. Donec aliquam vestibulum ipsum commodo sollicitudin.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://motionsquaremusic.github.io/public/img/2014-09-29_00006.jpg&quot; alt=&quot;Images2&quot; /&gt; Donec turpis sem, varius sed imperdiet nec, posuere eget felis. Morbi dolor odio, hendrerit vitae iaculis vel, porta eget felis. Maecenas facilisis quam elit, quis dapibus ligula malesuada id. Ut hendrerit libero quis libero aliquam, eget finibus dolor tincidunt. Donec aliquam vestibulum ipsum commodo sollicitudin.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/strong&gt;
 !!Mauris aliquet neque nec augue tempor blandit.!!
@@ -29,7 +29,7 @@ Duis eu ante quis sem efficitur vulputate.
 Nunc vitae odio eget lacus mollis auctor tincidunt vel metus.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://192.168.1.10:4000/public/img/1180818065759-1.jpg&quot; alt=&quot;Another Picture3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://motionsquaremusic.github.io/public/img/1180818065759-1.jpg&quot; alt=&quot;Another Picture3&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;habitasse-platea-dictumst-integer&quot;&gt;habitasse platea dictumst. Integer&lt;/h1&gt;
 
@@ -38,8 +38,8 @@ Nunc vitae odio eget lacus mollis auctor tincidunt vel metus.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Sed purus velit, aliquam at augue vel, maximus molestie mauris. Aenean quis consectetur neque, et ultricies eros. Nunc laoreet pretium purus. Sed a hendrerit risus. Sed a est ultricies, vulputate urna id, molestie sapien. Aliquam erat volutpat. Phasellus eros massa, blandit quis hendrerit et, cursus varius purus. Maecenas at imperdiet arcu. Proin condimentum sollicitudin dolor, sit amet dignissim sem placerat ac. Suspendisse potenti. Sed turpis metus, sagittis eget odio eget, pulvinar scelerisque sapien. Vivamus porta, arcu et feugiat hendrerit, nulla eros suscipit metus, vel commodo risus elit non lorem. Nulla facilisi.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Mar 2015 00:00:00 +0700</pubDate>
-        <link>http://192.168.1.10:4000/post/2015/03/02/troble-teammate.html</link>
-        <guid isPermaLink="true">http://192.168.1.10:4000/post/2015/03/02/troble-teammate.html</guid>
+        <link>http://motionsquaremusic.github.io/post/2015/03/02/troble-teammate.html</link>
+        <guid isPermaLink="true">http://motionsquaremusic.github.io/post/2015/03/02/troble-teammate.html</guid>
         
         
         <category>post</category>
@@ -68,8 +68,8 @@ Nunc vitae odio eget lacus mollis auctor tincidunt vel metus.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 02 Mar 2015 00:00:00 +0700</pubDate>
-        <link>http://192.168.1.10:4000/post/2015/03/02/another-to-post.html</link>
-        <guid isPermaLink="true">http://192.168.1.10:4000/post/2015/03/02/another-to-post.html</guid>
+        <link>http://motionsquaremusic.github.io/post/2015/03/02/another-to-post.html</link>
+        <guid isPermaLink="true">http://motionsquaremusic.github.io/post/2015/03/02/another-to-post.html</guid>
         
         
         <category>post</category>
@@ -96,8 +96,8 @@ Nunc vitae odio eget lacus mollis auctor tincidunt vel metus.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 30 Jan 2015 00:00:00 +0700</pubDate>
-        <link>http://192.168.1.10:4000/post/2015/01/30/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://192.168.1.10:4000/post/2015/01/30/welcome-to-jekyll.html</guid>
+        <link>http://motionsquaremusic.github.io/post/2015/01/30/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://motionsquaremusic.github.io/post/2015/01/30/welcome-to-jekyll.html</guid>
         
         
         <category>post</category>
