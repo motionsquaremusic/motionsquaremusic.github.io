@@ -33,15 +33,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
-	/*font-family: 'csprajad',sans-serif;*/
 	font-weight: 700;
 }
 
 p {
 	padding: 0;
 	margin-bottom: 12px;
-	font-family: 'csprajad',sans-serif;
-	/*font-family: 'Lato', sans-serif;*/
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
@@ -521,22 +519,3 @@ csmall2 {
 	#portfolio-modal-infographics,#portfolio-modal-altrock,#portfolio-modal-altrock{
 		display: none;
 	}
-
-/*********************************************
-THAI FONTS
-* CS PraJad
-* Credit goes to: CS@nok at f0nt.com (raveetavan@gmail.com);
-**********************************************/
-
-@font-face {
-  font-family: 'csprajad';
-  src: 
-    url('../fonts/CSPraJad-bold.otf') format('opentype'),
-    url('../fonts/CSPraJad-boldItalic.otf') format('opentype'),
-    url('../fonts/CSPraJad-Italic.otf') format('opentype'),
-    url('../fonts/CSPraJad.otf') format('opentype');
-}
-
-.th-content{
-	font-family: 'csprajad',sans-serif;
-}
