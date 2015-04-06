@@ -19,8 +19,9 @@ active: blogs
 		    <li>
 		      <a href="{{ post.url | prepend: site.url }}"><h2>{{ post.title }}</h2></a> 
 		      Posted at: {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • By: {{ post.author }}{% endif %}
-		      {{post.excerpt}} 
+		      {{post.excerpt}} <a href="{{ post.url | prepend: site.url }}">Read more</a>
 		    </li>
+		    <div class="margin-topbottom hline"></div>
 		  {% endfor %}
 		</ul>
 	</div>
