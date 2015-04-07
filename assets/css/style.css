@@ -626,7 +626,24 @@ csmall2 {
 	margin: 0 auto;
 }
 
+/*------------------------------------*\
+	#MEDIA OVERRIDE
+\*------------------------------------*/
+
 @media (min-width: 768px) and (max-width: 991px) {
-	#blue{
+	#blue {
 		margin-top: 100px;
 	}
+
+@media (max-width: 991px) {
+	#showcase-carousel {
+		max-width:100%;
+		height:inherit;
+		overflow:hidden;
+	}
+
+	.carousel-image	{
+	width: 100%;
+	margin: 0 auto;
+}
+}
