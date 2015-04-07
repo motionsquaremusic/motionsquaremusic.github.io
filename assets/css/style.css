@@ -634,7 +634,13 @@ csmall2 {
 	#blue {
 		margin-top: 100px;
 	}
+}
 
+@media (max-width: 300px) {
+	#blue {
+		margin-top: 100px;
+	}
+}
 @media (max-width: 991px) {
 	#showcase-carousel {
 		max-width:100%;
@@ -645,5 +651,12 @@ csmall2 {
 	.carousel-image	{
 	width: 100%;
 	margin: 0 auto;
+	}
 }
+
+@media (max-width: 767px) {
+
 }
+
+/*inherit-wrapper-height
+	then width auto;*/
