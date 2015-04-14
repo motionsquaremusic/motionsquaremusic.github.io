@@ -4,7 +4,7 @@ email: stockmusicth@gmail.com
 description: Stock music for Game, Film & Multimedia
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://motionsquaremusic.github.io" # the base hostname & protocol for your site | needs full protocol : http://
+url: "http://www.motionsquaremusic.com" # the base hostname & protocol for your site | needs full protocol : http://
 
 
 # Build settings
