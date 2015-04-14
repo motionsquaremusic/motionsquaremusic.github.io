@@ -10,7 +10,7 @@ active: blogs
 ![The picture1]({{site.url}}/public/img/1suite.jpg)
 
 วันนี้จะมาพูดเรื่องเบสิกนิดหน่อยครับ
-Suite คืออะไร เวลาเราฟังเพลงประกอบหนังของบางคนจะมีคำว่า Suite ต่อท้าย เช่น Eletro Suite ของ Hans https://www.youtube.com/watch?v=7zYB1PLjKv0
+__Suite__ คืออะไร เวลาเราฟังเพลงประกอบหนังของบางคนจะมีคำว่า Suite ต่อท้าย เช่น Eletro Suite ของ Hans <https://www.youtube.com/watch?v=7zYB1PLjKv0></https://www.youtube.com/watch?v>
 
 Suite คือเพลงที่เขียนขึ้นมาก่อนแบบไม่ได้เอาไปใส่กับภาพหรืออะไร จะเรียกว่าเป็นเพลงที่เขียนเพื่อลองให้ผู้กำกับดูว่าเพลงแบบนี้เหมาะไหม
 เช่น Hans หรือ Giacchino เขียนเพลงตั้งแต่หลังอ่านสคริปต์ หรือดูหนังไปแค่บางส่วนที่ยังไม่เสร็จ เพื่อที่จะให้ผกก.ดูว่า ชอบหรือไม่
