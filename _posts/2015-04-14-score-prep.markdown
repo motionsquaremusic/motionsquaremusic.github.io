@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Suite คืออะไร"
-date:   2015-04-07
+title:  "จัดscoreให้ได้มาตรฐานสากล"
+date:   2015-04-14
 author: Phil_wc
 categories: post
 active: blogs
