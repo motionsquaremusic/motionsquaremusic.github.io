@@ -660,3 +660,11 @@ csmall2 {
 
 /*inherit-wrapper-height
 	then width auto;*/
+
+/*------------------------------------*\
+	#BOOTSTRAP OVERRIDE
+\*------------------------------------*/
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #00b3fe;
+}
