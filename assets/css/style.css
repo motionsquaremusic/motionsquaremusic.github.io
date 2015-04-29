@@ -238,6 +238,21 @@ a:focus {
     padding: 15px;
 }
 
+
+#service .service-item:hover{
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 /* Portfolio Wrap */
 #portfoliowrap {
     background: rgba(37, 93, 118, 0.96);
@@ -523,22 +538,6 @@ csmall2 {
     }
 
 
-#service .fa:hover{
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-
-}
-
-
 /*------------------------------------*\
     #CAROUSEL OVERRIDE
 \*------------------------------------*/
@@ -560,7 +559,7 @@ csmall2 {
 
 @media (min-width: 768px) and (max-width: 991px) {
   #blue {
-      margin-top: 100px;
+    margin-top: 100px;
   }
 }
 
@@ -570,19 +569,19 @@ csmall2 {
 
 @media (max-width: 300px) {
   #blue {
-      margin-top: 100px;
+    margin-top: 100px;
   }
 }
 @media (max-width: 991px) {
   #showcase-carousel {
-      max-width:100%;
-      height:inherit;
-      overflow:hidden;
+    max-width:100%;
+    height:inherit;
+    overflow:hidden;
   }
 
   .carousel-image {
-  width: 100%;
-  margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -592,5 +591,5 @@ csmall2 {
 \*------------------------------------*/
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #00b3fe;
+  color: #00b3fe;
 }
