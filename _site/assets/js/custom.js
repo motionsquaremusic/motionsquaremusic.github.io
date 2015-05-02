@@ -85,5 +85,12 @@
 		});  	
 		jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
 	}); 
+
+	
+    jQuery('.contenthover-portfolio').contenthover({
+        overlay_background:'#000',
+        overlay_opacity:0.8
+    });
+		
 })(jQuery);
 
