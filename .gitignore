@@ -1,7 +1,4 @@
 /_site/
 _site/
-_site
-_config.yml
-_config.yml
-
+./_site
 _config.yml
