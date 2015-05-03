@@ -494,8 +494,8 @@ csmall2 {
   Laptop
 **********************************************/
 
-.laptop-teaser {margin: 0 50px;}
-.laptop-teaser iframe{
+.laptop-teaser {
+    margin: 0 50px;
     border:10px solid #000;
     border-radius: 20px !important;
 }
