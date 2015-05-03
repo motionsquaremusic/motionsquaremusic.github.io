@@ -9,20 +9,28 @@ active: blogs
 
 ![The picture]({{site.url}}/public/img/3headphones.jpg)
 
-__ยี่ห้อหูฟังยอดนิยมในสายงาน Film Score__
+## ยี่ห้อหูฟังยอดนิยมในสายงาน Film Score
 
 เป็นการ research ของผมเองจากเว็บบอร์ดต่างประเทศและคนใช้งานหลายๆที่ จนได้ลิสต์ยี่ห้อมาคร่าวๆ สำหรับคนที่ยังไม่มีลำโพงมอนิเตอร์ แนะนำให้เริ่มจากหูฟังก่อนเพราะราคาถูกกว่าครับ
 
 Open-Back: 
+
     * Sennheiser HD 600/650
+    
     * AKG K702/K712
+    
     * AKG K612
+    
     * Beyerdynamic DT 880 Pro
 
 Closed-Back: 
+
     * Focal Spirit Professional
+    
     * Audio Technica ATH M-50 and M-50x
+    
     * Shure SRH-840
+    
     * Beyerdynamic DT 770 Pro
 
 ตอนนี้ผมใช้ DT 770 Pro อยู่ครับ
