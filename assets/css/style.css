@@ -495,7 +495,7 @@ csmall2 {
 **********************************************/
 
 .laptop-teaser {
-    margin: 60px 80px 0 80px;
+    padding: 0;
     border:15px solid #000;
     border-radius: 15px !important;
 }
