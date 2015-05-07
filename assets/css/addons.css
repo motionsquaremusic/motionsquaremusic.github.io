@@ -1,5 +1,5 @@
 /*********************************************
-	Global 
+	Global override
 **********************************************/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -15,8 +15,18 @@
   }
 }
 
-.no-padding { padding: 0 !important;  }
-.no-margin  { margin: 0 !important;   }
+@media (max-width: 991px) {
+  #showcase-carousel {
+    max-width:100%;
+    height:inherit;
+    overflow:hidden;
+  }
+
+  .carousel-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 
 /* BOOTSTRAP OVERRIDE*/
@@ -122,18 +132,7 @@
     margin: 0 auto;
 	}
 
-@media (max-width: 991px) {
-  #showcase-carousel {
-    max-width:100%;
-    height:inherit;
-    overflow:hidden;
-  }
 
-  .carousel-image {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
 
 
 
