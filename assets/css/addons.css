@@ -1,5 +1,5 @@
 /*********************************************
-	Global
+	Global override
 **********************************************/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -15,6 +15,19 @@
   }
 }
 
+@media (max-width: 991px) {
+  #showcase-carousel {
+    max-width:100%;
+    height:inherit;
+    overflow:hidden;
+  }
+
+  .carousel-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 
 /* BOOTSTRAP OVERRIDE*/
 
@@ -22,11 +35,6 @@
 .navbar-default .navbar-brand:focus {
   color: #00b3fe;
 }
-
-/* general utilities */
-
-.no-padding {padding: 0 !important;}
-.no-marging {margin: 0 !important;}
 
 /*********************************************
 	Homepage
@@ -124,18 +132,6 @@
     margin: 0 auto;
 	}
 
-@media (max-width: 991px) {
-  #showcase-carousel {
-    max-width:100%;
-    height:inherit;
-    overflow:hidden;
-  }
-
-  .carousel-image {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
 
 
 
