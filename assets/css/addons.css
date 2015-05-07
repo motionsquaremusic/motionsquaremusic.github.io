@@ -1,5 +1,5 @@
 /*********************************************
-	Global override
+  Global 
 **********************************************/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -15,18 +15,8 @@
   }
 }
 
-@media (max-width: 991px) {
-  #showcase-carousel {
-    max-width:100%;
-    height:inherit;
-    overflow:hidden;
-  }
-
-  .carousel-image {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
+.no-padding { padding: 0 !important;  }
+.no-margin  { margin: 0 !important;   }
 
 
 /* BOOTSTRAP OVERRIDE*/
@@ -37,7 +27,7 @@
 }
 
 /*********************************************
-	Homepage
+  Homepage
 **********************************************/
 
 
@@ -115,7 +105,7 @@
 
 
 /*********************************************
-	SHOWCASE
+  SHOWCASE
 **********************************************/
 
 
@@ -127,24 +117,35 @@
   overflow: hidden;
 }
 
-	.carousel-image {
+  .carousel-image {
     width:  100%;
     margin: 0 auto;
-	}
+  }
 
+@media (max-width: 991px) {
+  #showcase-carousel {
+    max-width:100%;
+    height:inherit;
+    overflow:hidden;
+  }
 
+  .carousel-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 
 
 /*********************************************
-	ABOUTUS
+  ABOUTUS
 **********************************************/
 
 .about-imagesrow{
-	
+  
 }
 
 .about--image{
-	display: inline-block;
+  display: inline-block;
 }
 
