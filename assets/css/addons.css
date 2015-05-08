@@ -17,7 +17,6 @@
 
 .no-padding { padding: 0 !important;  }
 .no-margin  { margin: 0 !important;   }
-.width-fullcontainer { width: 100%;}
 
 
 /* BOOTSTRAP OVERRIDE*/
@@ -26,6 +25,10 @@
 .navbar-default .navbar-brand:focus {
   color: #00b3fe;
 }
+
+
+
+
 
 /*********************************************
   Homepage
@@ -105,6 +108,22 @@
 }
 
 
+
+
+
+/*********************************************
+  ABOUTUS
+**********************************************/
+
+
+.about-image{
+  display: inline-block;
+}
+
+
+
+
+
 /*********************************************
   SHOWCASE
 **********************************************/
@@ -135,18 +154,3 @@
     margin: 0 auto;
   }
 }
-
-
-
-/*********************************************
-  ABOUTUS
-**********************************************/
-
-.about-imagesrow{
-  
-}
-
-.about--image{
-  display: inline-block;
-}
-
