@@ -48,9 +48,9 @@ active: index
 <div id="portfoliowrap">
   <h3>OUR MUSIC COLLECTION</h3>
   <p>คลิกเพื่อฟังเพลงในคลังของเรา</p>
-  <!-- PORTFOLIO SECTION -->
+<!--   
   <section id="section-portfolio" class="container mb">
-    <div id="musiccollection" class="center-block text-center">
+    <div class="center-block text-center">
       
       <article class="musiccollection">
         <a data-toggle="modal" href="#portfolio-modal-altrock">
@@ -80,6 +80,34 @@ active: index
         <a class="musiccollection-text" data-toggle="modal" href="#portfolio-modal-game"><i class="fa fa-caret-square-o-right"></i> DISCOVER</a>
       </article>
 
+    </div>
+  </section>
+ -->
+
+  <section id="musiccollections-containerfluid">
+    <div class="container-fluid center-block">
+      <div class="row">
+        <div class="musiccollection [ col-lg-3 col-md-3 col-sm-6 col-xs-6 ] [ no-padding no-margin ]">
+          <a data-toggle="modal" href="#portfolio-modal-cinematic">
+            <img src="{{"/assets/img/portfolio/img-portfolio-altrock-250px.jpg" | prepend: site.url }}" class="img-responsive width-fullcontainer">
+          </a>
+        </div>
+        <div class="musiccollection [ col-lg-3 col-md-3 col-sm-6 col-xs-6 ] [ no-padding no-margin ]">
+          <a data-toggle="modal" href="#portfolio-modal-infographics">          
+            <img src="{{"/assets/img/portfolio/img-portfolio-cinematic-250px.jpg" | prepend: site.url }}" class="img-responsive width-fullcontainer">
+          </a>
+        </div>
+        <div class="musiccollection [ col-lg-3 col-md-3 col-sm-6 col-xs-6 ] [ no-padding no-margin ]">
+          <a data-toggle="modal" href="#portfolio-modal-infographics">
+            <img src="{{"/assets/img/portfolio/img-portfolio-infographics-250px.jpg" | prepend: site.url }}" class="img-responsive width-fullcontainer">
+          </a>
+        </div>
+        <div class="musiccollection [ col-lg-3 col-md-3 col-sm-6 col-xs-6 ] [ no-padding no-margin ]">
+          <a data-toggle="modal" href="#portfolio-modal-game">
+            <img src="{{"/assets/img/portfolio/img-portfolio-game-250px.jpg" | prepend: site.url }}" class="img-responsive width-fullcontainer">
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 

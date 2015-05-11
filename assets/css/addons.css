@@ -17,6 +17,7 @@
 
 .no-padding { padding: 0 !important;  }
 .no-margin  { margin: 0 !important;   }
+.width-fullcontainer {width: 100% !important}
 
 
 /* BOOTSTRAP OVERRIDE*/
@@ -45,16 +46,23 @@
   /*GRID ITEM: music collection GRID*/
 
   .musiccollection{
-    width: 250px;
-    height: 250px;
     display: inline-block;
     position: relative;
-    border: 1px solid rgba(255,255,255,0.8);
     overflow: hidden;
+
+    -webkit-filter: brightness(.5);
+    -moz-filter: brightness(.5);
+    filter: brightness(.5);
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+
   }
 
-  .musiccollection:hover .musiccollection-text{
-    position: absolute;
+  .musiccollection:hover{
+/*    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -66,20 +74,25 @@
     color:rgba(37, 93, 118, 0.96);
 
     background: #ffffff;
-    opacity: .8;
+    opacity: .8;*/
 
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    transition: all .5s;
+
+  -webkit-filter: brightness(1.25);
+  -moz-filter: brightness(1.25);
+  filter: brightness(1.25);
   }
+
+
+
+
+
 
     /* music collection modal*/
 
     #portfolio-modal-infographics,
     #portfolio-modal-altrock,
     #portfolio-modal-altrock{
-        display: none;
+      display: none;
     }
 
 
