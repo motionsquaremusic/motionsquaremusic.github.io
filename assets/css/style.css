@@ -236,8 +236,7 @@ a:focus {
 /* Portfolio Wrap */
 #portfoliowrap {
     background: rgba(37, 93, 118, 0.96);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
     margin-bottom: 60px;
     display: block;
     text-align: center
