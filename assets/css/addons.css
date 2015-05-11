@@ -1,5 +1,5 @@
 /*********************************************
-  Global 
+	Global override
 **********************************************/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -15,8 +15,18 @@
   }
 }
 
-.no-padding { padding: 0 !important;  }
-.no-margin  { margin: 0 !important;   }
+@media (max-width: 991px) {
+  #showcase-carousel {
+    max-width:100%;
+    height:inherit;
+    overflow:hidden;
+  }
+
+  .carousel-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 
 /* BOOTSTRAP OVERRIDE*/
@@ -26,12 +36,8 @@
   color: #00b3fe;
 }
 
-
-
-
-
 /*********************************************
-  Homepage
+	Homepage
 **********************************************/
 
 
@@ -42,45 +48,46 @@
 }
 
 
-  /*GRID ITEM: music collection GRID*/
+/*GRID ITEM: music collection GRID*/
 
-  .musiccollection{
-    width: 250px;
-    height: 250px;
-    display: inline-block;
-    position: relative;
-    border: 1px solid rgba(255,255,255,0.8);
-    overflow: hidden;
+.musiccollection{
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.8);
+  overflow: hidden;
+}
+
+.musiccollection:hover .musiccollection-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  line-height: 10;
+  text-align: center;
+  font-size: 24px;
+  color:rgba(37, 93, 118, 0.96);
+
+  background: #ffffff;
+  opacity: .8;
+
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+  /* music collection modal*/
+
+  #portfolio-modal-infographics,
+  #portfolio-modal-altrock,
+  #portfolio-modal-altrock{
+      display: none;
   }
-
-  .musiccollection:hover .musiccollection-text{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    line-height: 10;
-    text-align: center;
-    font-size: 24px;
-    color:rgba(37, 93, 118, 0.96);
-
-    background: #ffffff;
-    opacity: .8;
-
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    transition: all .5s;
-  }
-
-    /* music collection modal*/
-
-    #portfolio-modal-infographics,
-    #portfolio-modal-altrock,
-    #portfolio-modal-altrock{
-        display: none;
-    }
 
 
 /* service icon */
@@ -95,87 +102,20 @@
 #service .service-item:hover{
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 
-
-
-
 /*********************************************
-  ABOUTUS
-**********************************************/
-
-
-.about-image{
-  display: inline-block;
-  overflow: hidden;
-
-  -webkit-filter: brightness(.8);
-  -moz-filter: brightness(.8);
-  filter: brightness(.8);
-  
-  /*  -webkit-opacity: 0.6;
-  -moz-opacity: 0.6;
-  opacity: 0.6;*/
-
-  transition: filter .25s ease-in-out;
-}
-
-.about-image:hover{
-
-  -webkit-filter: brightness(1.2);
-  -moz-filter: brightness(1.2);
-  filter: brightness(1.2);
-
-
-/*  -webkit-animation-name: brighten;
-  -moz-animation-name: brighten;
-  animation-name: brighten;
-
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-
-  -webkit-animation-iteration-count :infinite;
-  -moz-animation-iteration-count :infinite;
-  animation-iteration-count :infinite;*/
-  
-/*  -webkit-filter: brightness(1.2);
-  -moz-filter: brightness(1.2);
-  filter: brightness(1.2);*/
-}
-
-/*
-
-
-@-webkit-keyframes brighten{
-  from  { -webkit-filter: brightness(.8);   }
-  to    { -webkit-filter: brightness(1.2);  }
-}
-
-@-moz-keyframes brighten{
-  from  { -moz-filter: brightness(.8);   }
-  to    { -moz-filter: brightness(1.2);  }
-}
-
-@keyframes brighten{
-  from  { filter: brightness(.8);   }
-  to    { filter: brightness(1.2);  }
-}
-*/
-
-
-
-
-
-/*********************************************
-  SHOWCASE
+	SHOWCASE
 **********************************************/
 
 
@@ -187,20 +127,24 @@
   overflow: hidden;
 }
 
-  .carousel-image {
+	.carousel-image {
     width:  100%;
     margin: 0 auto;
-  }
+	}
 
-@media (max-width: 991px) {
-  #showcase-carousel {
-    max-width:100%;
-    height:inherit;
-    overflow:hidden;
-  }
 
-  .carousel-image {
-    width: 100%;
-    margin: 0 auto;
-  }
+
+
+
+/*********************************************
+	ABOUTUS
+**********************************************/
+
+.about-imagesrow{
+	
 }
+
+.about--image{
+	display: inline-block;
+}
+
