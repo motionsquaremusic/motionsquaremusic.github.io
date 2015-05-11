@@ -111,7 +111,6 @@
 	SHOWCASE
 **********************************************/
 
-
 /* CAROUSEL OVERRIDE */
 
 #showcase-carousel {
@@ -133,11 +132,19 @@
 	ABOUTUS
 **********************************************/
 
-.about-imagesrow{
-	
+.about-image{
+  display: inline-block;
+  overflow: hidden;
+  opacity: 1;
+
+  transition: all .2s ease-in-out;
+
 }
 
-.about--image{
-	display: inline-block;
+.about-image:hover{
+
+  background: #ffffff;
+  opacity: .75;
 }
+
 
