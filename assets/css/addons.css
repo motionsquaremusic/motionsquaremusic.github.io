@@ -1,5 +1,5 @@
 /*********************************************
-  Global 
+	Global override
 **********************************************/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -20,6 +20,7 @@
 .width-fullcontainer {  width: 100% !important}
 
 
+
 /* BOOTSTRAP OVERRIDE*/
 
 .navbar-default .navbar-brand:hover, 
@@ -27,12 +28,8 @@
   color: #00b3fe;
 }
 
-
-
-
-
 /*********************************************
-  Homepage
+	Homepage
 **********************************************/
 
 
@@ -43,7 +40,7 @@
 }
 
 
-  /*GRID ITEM: music collection GRID*/
+/*GRID ITEM: music collection GRID*/
 
   .musiccollection{
     position: relative;
@@ -77,13 +74,13 @@
     opacity: .8;
   }
 
-    /* music collection modal*/
+  /* music collection modal*/
 
-    #portfolio-modal-infographics,
-    #portfolio-modal-altrock,
-    #portfolio-modal-altrock{
-        display: none;
-    }
+  #portfolio-modal-infographics,
+  #portfolio-modal-altrock,
+  #portfolio-modal-altrock{
+      display: none;
+  }
 
 
 /* service icon */
@@ -98,87 +95,20 @@
 #service .service-item:hover{
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 
-
-
-
 /*********************************************
-  ABOUTUS
-**********************************************/
-
-
-.about-image{
-  display: inline-block;
-  overflow: hidden;
-
-  -webkit-filter: brightness(.8);
-  -moz-filter: brightness(.8);
-  filter: brightness(.8);
-  
-  /*  -webkit-opacity: 0.6;
-  -moz-opacity: 0.6;
-  opacity: 0.6;*/
-
-  transition: filter .25s ease-in-out;
-}
-
-.about-image:hover{
-
-  -webkit-filter: brightness(1.2);
-  -moz-filter: brightness(1.2);
-  filter: brightness(1.2);
-
-
-/*  -webkit-animation-name: brighten;
-  -moz-animation-name: brighten;
-  animation-name: brighten;
-
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-
-  -webkit-animation-iteration-count :infinite;
-  -moz-animation-iteration-count :infinite;
-  animation-iteration-count :infinite;*/
-  
-/*  -webkit-filter: brightness(1.2);
-  -moz-filter: brightness(1.2);
-  filter: brightness(1.2);*/
-}
-
-/*
-
-
-@-webkit-keyframes brighten{
-  from  { -webkit-filter: brightness(.8);   }
-  to    { -webkit-filter: brightness(1.2);  }
-}
-
-@-moz-keyframes brighten{
-  from  { -moz-filter: brightness(.8);   }
-  to    { -moz-filter: brightness(1.2);  }
-}
-
-@keyframes brighten{
-  from  { filter: brightness(.8);   }
-  to    { filter: brightness(1.2);  }
-}
-*/
-
-
-
-
-
-/*********************************************
-  SHOWCASE
+	SHOWCASE
 **********************************************/
 
 
@@ -190,20 +120,24 @@
   overflow: hidden;
 }
 
-  .carousel-image {
+	.carousel-image {
     width:  100%;
     margin: 0 auto;
-  }
+	}
 
-@media (max-width: 991px) {
-  #showcase-carousel {
-    max-width:100%;
-    height:inherit;
-    overflow:hidden;
-  }
 
-  .carousel-image {
-    width: 100%;
-    margin: 0 auto;
-  }
+
+
+
+/*********************************************
+	ABOUTUS
+**********************************************/
+
+.about-imagesrow{
+	
 }
+
+.about--image{
+	display: inline-block;
+}
+
