@@ -1,5 +1,5 @@
 /*********************************************
-  Global 
+	Global override
 **********************************************/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -17,6 +17,8 @@
 
 .no-padding { padding: 0 !important;  }
 .no-margin  { margin: 0 !important;   }
+.width-fullcontainer {  width: 100% !important}
+
 
 
 /* BOOTSTRAP OVERRIDE*/
@@ -26,12 +28,8 @@
   color: #00b3fe;
 }
 
-
-
-
-
 /*********************************************
-  Homepage
+	Homepage
 **********************************************/
 
 
@@ -42,18 +40,25 @@
 }
 
 
-  /*GRID ITEM: music collection GRID*/
+/*GRID ITEM: music collection GRID*/
 
   .musiccollection{
-    width: 250px;
-    height: 250px;
-    display: inline-block;
     position: relative;
-    border: 1px solid rgba(255,255,255,0.8);
     overflow: hidden;
+    display: inline-block;
+    z-index: 0;
+
+    transition: all 1s ease-in-out;
   }
 
+.musiccollection .musiccollection-text{
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
   .musiccollection:hover .musiccollection-text{
+    z-index: 1;
+    display: inline;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,25 +67,20 @@
 
     line-height: 10;
     text-align: center;
-    font-size: 24px;
-    color:rgba(37, 93, 118, 0.96);
+    font-size: 36px;
+    color:rgb(37, 93, 118);
 
     background: #ffffff;
     opacity: .8;
-
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    transition: all .5s;
   }
 
-    /* music collection modal*/
+  /* music collection modal*/
 
-    #portfolio-modal-infographics,
-    #portfolio-modal-altrock,
-    #portfolio-modal-altrock{
-        display: none;
-    }
+  #portfolio-modal-infographics,
+  #portfolio-modal-altrock,
+  #portfolio-modal-altrock{
+      display: none;
+  }
 
 
 /* service icon */
@@ -95,23 +95,42 @@
 #service .service-item:hover{
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
+
+
+/*********************************************
+	SHOWCASE
+**********************************************/
+
+/* CAROUSEL OVERRIDE */
+
+#showcase-carousel {
+  width:    100%;
+  height:   500px;
+  overflow: hidden;
+}
+
+	.carousel-image {
+    width:  100%;
+    margin: 0 auto;
+	}
 
 
 
 
 
 /*********************************************
-  ABOUTUS
+	ABOUTUS
 **********************************************/
-
 
 .about-image{
   display: inline-block;
@@ -129,38 +148,3 @@
 }
 
 
-
-
-
-
-
-/*********************************************
-  SHOWCASE
-**********************************************/
-
-
-/* CAROUSEL OVERRIDE */
-
-#showcase-carousel {
-  width:    100%;
-  height:   500px;
-  overflow: hidden;
-}
-
-  .carousel-image {
-    width:  100%;
-    margin: 0 auto;
-  }
-
-@media (max-width: 991px) {
-  #showcase-carousel {
-    max-width:100%;
-    height:inherit;
-    overflow:hidden;
-  }
-
-  .carousel-image {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
