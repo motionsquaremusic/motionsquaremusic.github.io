@@ -116,59 +116,19 @@
 .about-image{
   display: inline-block;
   overflow: hidden;
+  opacity: 1;
 
-  -webkit-filter: brightness(.8);
-  -moz-filter: brightness(.8);
-  filter: brightness(.8);
-  
-  /*  -webkit-opacity: 0.6;
-  -moz-opacity: 0.6;
-  opacity: 0.6;*/
+  transition: all .2s ease-in-out;
 
-  transition: filter .25s ease-in-out;
 }
 
 .about-image:hover{
 
-  -webkit-filter: brightness(1.2);
-  -moz-filter: brightness(1.2);
-  filter: brightness(1.2);
-
-
-/*  -webkit-animation-name: brighten;
-  -moz-animation-name: brighten;
-  animation-name: brighten;
-
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-
-  -webkit-animation-iteration-count :infinite;
-  -moz-animation-iteration-count :infinite;
-  animation-iteration-count :infinite;*/
-  
-/*  -webkit-filter: brightness(1.2);
-  -moz-filter: brightness(1.2);
-  filter: brightness(1.2);*/
+  background: #ffffff;
+  opacity: .75;
 }
 
-/*
 
-
-@-webkit-keyframes brighten{
-  from  { -webkit-filter: brightness(.8);   }
-  to    { -webkit-filter: brightness(1.2);  }
-}
-
-@-moz-keyframes brighten{
-  from  { -moz-filter: brightness(.8);   }
-  to    { -moz-filter: brightness(1.2);  }
-}
-
-@keyframes brighten{
-  from  { filter: brightness(.8);   }
-  to    { filter: brightness(1.2);  }
-}
-*/
 
 
 
