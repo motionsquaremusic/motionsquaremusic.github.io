@@ -17,7 +17,7 @@
 
 .no-padding { padding: 0 !important;  }
 .no-margin  { margin: 0 !important;   }
-.width-fullcontainer {width: 100% !important}
+.width-fullcontainer {  width: 100% !important}
 
 
 /* BOOTSTRAP OVERRIDE*/
@@ -46,23 +46,23 @@
   /*GRID ITEM: music collection GRID*/
 
   .musiccollection{
-    display: inline-block;
     position: relative;
     overflow: hidden;
+    display: inline-block;
+    z-index: 0;
 
-    -webkit-filter: brightness(.5);
-    -moz-filter: brightness(.5);
-    filter: brightness(.5);
-
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    transition: all .5s;
-
+    transition: all 1s ease-in-out;
   }
 
-  .musiccollection:hover{
-/*    position: absolute;
+.musiccollection .musiccollection-text{
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+  .musiccollection:hover .musiccollection-text{
+    z-index: 1;
+    display: inline;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -70,16 +70,11 @@
 
     line-height: 10;
     text-align: center;
-    font-size: 24px;
-    color:rgba(37, 93, 118, 0.96);
+    font-size: 36px;
+    color:rgb(37, 93, 118);
 
     background: #ffffff;
-    opacity: .8;*/
-
-
-    -webkit-filter: brightness(1.25);
-    -moz-filter: brightness(1.25);
-    filter: brightness(1.25);
+    opacity: .8;
   }
 
     /* music collection modal*/
@@ -87,31 +82,28 @@
     #portfolio-modal-infographics,
     #portfolio-modal-altrock,
     #portfolio-modal-altrock{
-      display: none;
+        display: none;
     }
 
 
 /* service icon */
 
 #service i {
-  color: #00b3fe;
-  font-size: 60px;
-  padding: 15px;
-
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  transform: scale(1);
-
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  transition: all .2s;
+    color: #00b3fe;
+    font-size: 60px;
+    padding: 15px;
 }
 
 
-#service i:hover{
+#service .service-item:hover{
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
