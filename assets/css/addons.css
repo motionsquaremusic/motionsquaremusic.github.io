@@ -89,16 +89,16 @@
     color: #00b3fe;
     font-size: 60px;
     padding: 15px;
-}
 
-
-#service .service-item:hover{
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+}
 
+
+#service i:hover{
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
