@@ -3,7 +3,7 @@ layout: post
 title:  "การเลือกหูฟังสาย Film Score"
 date:   2015-05-03
 author: Phil_wc
-categories: post
+category: post
 active: blogs
 ---
 

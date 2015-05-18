@@ -3,7 +3,7 @@ layout: post
 title:  "Suite คืออะไร"
 date:   2015-04-07
 author: Phil_wc
-categories: post
+categories: [post,tips]
 active: blogs
 ---
 

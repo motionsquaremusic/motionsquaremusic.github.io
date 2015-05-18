@@ -13,7 +13,7 @@ active: blogs
 </div>
 
 <div class="container mtb">
-	<div id="blog-array">
+<!-- 	<div id="blog-array">
 		<ul class="list-unstyled">
 		  {% for post in site.posts %}
 		    <li>
@@ -25,5 +25,53 @@ active: blogs
 		    <div class="margin-topbottom hline"></div>
 		  {% endfor %}
 		</ul>
-	</div>
+	</div> -->
+
+  <div class="row">
+    <!-- Recent Blog post excerpt -->
+    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+      <div id="blog-array">
+        <ul class="list-unstyled">
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url | prepend: site.url }}"><h2>{{ post.title }}</h2></a> 
+              Posted at: {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • By: {{ post.author }}{% endif %}
+              {{post.excerpt}} <a href="{{ post.url | prepend: site.url }}">Read more</a>
+            </li>
+            <br/>
+            <div class="margin-topbottom hline"></div>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Sidebar -->
+    <div class="col-lg-4 col-md-4 col-sm-2 col-xs-12">
+      <aside>
+        <!-- Recent Post -->
+        <div class="recent-post">              
+          <h4>Recent Post</h4>
+            <ul>
+            {% for post in site.posts limit:3 %}
+              <li>
+                <a href="{{ post.url | prepend: site.url }}"><h4>{{ post.title }}<br/><small>{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}</small></h4></a>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+        <div class="hline"></div>
+        <!-- Popular Tags -->
+        <div class="popular-tags">
+          <h4>Popular Tags</h4>
+
+        </div>
+        <div class="hline"></div>
+        <!-- Share -->
+        <div class="share-post">
+          <h4>Share this</h4>
+        </div>
+        
+      </aside>  
+    </div>
+  </div>
 </div>

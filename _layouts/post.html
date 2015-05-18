@@ -15,10 +15,6 @@ layout: default
 <div class="post">
   <article class="post-content">
     <div class="container mtb">
-      {{ content }}
-      <!-- New layout -->
-      <div class="hline"></div>
-      <h1>NEW LAYOUT BELOW</h1>
       <div class="row">
         <!-- Blog content -->
         <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
@@ -28,10 +24,11 @@ layout: default
         <!-- Sidebar -->
         <div class="col-lg-4 col-md-4 col-sm-2 col-xs-12">
           <aside>
-            <h4>Recent Post</h4>
-              <div class="recent-post">              
+            <!-- Recent Post -->
+            <div class="recent-post">              
+              <h4>Recent Post</h4>
                 <ul>
-                {% for post in site.posts limit:3%}
+                {% for post in site.posts limit:3 %}
                   <li>
                     <a href="{{ post.url | prepend: site.url }}"><h4>{{ post.title }}<br/><small>{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}</small></h4></a>
                   </li>
@@ -39,6 +36,16 @@ layout: default
                 </ul>
               </div>
             <div class="hline"></div>
+            <!-- Popular Tags -->
+            <div class="popular-tags">
+              <h4>Popular Tags</h4>
+
+            </div>
+            <div class="hline"></div>
+            <!-- Share -->
+            <div class="share-post">
+              <h4>Share this</h4>
+            </div>
             
           </aside>
         </div>
