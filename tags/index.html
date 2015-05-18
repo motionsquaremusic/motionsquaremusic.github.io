@@ -1,0 +1,47 @@
+---
+layout: default
+title: Tags
+---
+
+<div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>ALL BLOG POST TAGS</h3>
+        </div><!-- /row -->
+    </div><!-- /container -->
+</div>
+
+<div class="container mtb">
+	{% for tag in site.tags %}
+    <div class="post-by-tag">
+      {% assign posttag = tag | first %}
+        <h3>{{ tag | first}}</h3>
+        <div class="hline"></div>
+        {% for posts in tag %}
+          {% for post in posts %}
+            {% if post.url and post.date %}
+              <ul>
+                <li>
+                  <a href="{{ post.url | prepend: siteurl }}">{{ post.title }} | {{ post.date | date: "%b %-d, %Y" }}</a>
+                </li>
+              </ul>            
+            {% endif %}          
+          {% endfor%}
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+
+<!-- 
+how about change to
+
+- layout use the same as blogs
+- but instead of showing all post, show the selected tag only
+
+for example: choose `tips` the header will show
+
+Blog post with tag "Tips"
+
+then list like a blog page
+
+ -->
