@@ -37,28 +37,6 @@ title: Tags
           </div>
         {% endfor %}  
       </div>
-
-      <!-- No nested -->
-      <h2>Normal, no nested</h2>
-      {% for tag in site.tags %}
-        <div class="post-by-tag">
-          {% assign posttag = tag | first %}
-            <h3>{{ tag | first}}</h3>
-            <div class="hline"></div>
-            {% for posts in tag %}
-              {% for post in posts %}
-                {% if post.url and post.date %}
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="{{ post.url | prepend: siteurl }}">{{ post.title }} | {{ post.date | date: "%b %-d, %Y" }}</a>
-                    </li>
-                  </ul>            
-                {% endif %}          
-              {% endfor%}
-            {% endfor %}
-        </div>
-      {% endfor %}
-      <!-- End no nested -->
     </div>
 
     <!-- Sidebar -->
