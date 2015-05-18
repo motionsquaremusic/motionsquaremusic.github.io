@@ -148,3 +148,17 @@
 }
 
 
+
+
+
+/*********************************************
+  BLOGS & SINGLE BLOGS
+**********************************************/
+
+aside>div {
+  margin-bottom: 20px;
+}
+
+.recent-post li{
+  list-style-type: none;
+}
