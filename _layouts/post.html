@@ -6,7 +6,7 @@ layout: default
     <div class="row">
       <header class="post-header">
         <h3 class="post-title">{{ page.title }}</h3>
-        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • By {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • By {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} <br/> Tag:{% for tag in page.tags %} <a href="{{ "/tags&#35;" | prepend: site.url | append: tag }}">{{tag}}</a> {% endfor %}</p>
       </header>
     </div>
   </div>
@@ -19,6 +19,10 @@ layout: default
         <!-- Blog content -->
         <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
           {{ content }}
+          <p>Tag: 
+          
+          </p>
+          
           <div class="hline"></div>
           <div class="share-post">
             <h4>Share this:</h4>

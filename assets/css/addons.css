@@ -156,10 +156,9 @@
 **********************************************/
 
 
-aside>div {
-  margin-bottom: 20px;
-}
+aside>div { margin-bottom: 20px; }
 
+.post-meta a:hover { color:#ffffff; }
 
 
 
@@ -169,6 +168,4 @@ aside>div {
 **********************************************/
 
 
-.post-by-tag ul li{
-  margin-left: 20px;
-}
+.post-by-tag ul li { margin-left: 20px; }
