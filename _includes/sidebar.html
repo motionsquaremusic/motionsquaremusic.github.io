@@ -1,0 +1,27 @@
+<!-- Recent Post -->
+<div class="recent-post">              
+  <h4>Recent Post</h4>
+    <ul>
+    {% for post in site.posts limit:3 %}
+      <li>
+        <a href="{{ post.url | prepend: site.url }}"><h4>{{ post.title }}<br/><small>{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}</small></h4></a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+<div class="hline"></div>
+<!-- Blogpost Tags -->
+<div class="blogpost-tags">
+  <h4>All Tags</h4>
+  {% for tag in site.tags %}
+    {% assign posttag = tag | first %} 
+      {% comment %}
+        filter :first will get the first element of the incoming data
+        or just explicitly include filter {{tag | first}}
+      {% endcomment %}
+    <a href="{{ "/tags&#35;" | prepend: site.url | append: posttag }}" class="btn btn-info">{{posttag}}</a>
+  {% endfor %}
+
+  <p><a href="{{ "/tags" | prepend: site.url }}">View all tags</a></p>
+</div>
+<div class="hline"></div>
