@@ -155,10 +155,20 @@
   BLOGS & SINGLE BLOGS
 **********************************************/
 
+
 aside>div {
   margin-bottom: 20px;
 }
 
-.recent-post li{
-  list-style-type: none;
+
+
+
+
+/*********************************************
+  TAG LISTING PAGE
+**********************************************/
+
+
+.post-by-tag ul li{
+  margin-left: 20px;
 }
