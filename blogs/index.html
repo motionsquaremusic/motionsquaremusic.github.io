@@ -5,25 +5,38 @@ active: blogs
 ---
 
 <div id="blue">
-    <div class="container">
-        <div class="row">
-            <h3>BLOGS</h3>
-        </div><!-- /row -->
-    </div><!-- /container -->
+  <div class="container">
+    <div class="row">
+      <h3>BLOGS</h3>  
+    </div><!-- /row -->
+  </div><!-- /container -->
 </div>
 
 <div class="container mtb">
-	<div id="blog-array">
-		<ul class="list-unstyled">
-		  {% for post in site.posts %}
-		    <li>
-		      <a href="{{ post.url | prepend: site.url }}"><h2>{{ post.title }}</h2></a> 
-		      Posted at: {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • By: {{ post.author }}{% endif %}
-		      {{post.excerpt}} <a href="{{ post.url | prepend: site.url }}">Read more</a>
-		    </li>
-		    <br/>
-		    <div class="margin-topbottom hline"></div>
-		  {% endfor %}
-		</ul>
-	</div>
+  <div class="row">
+    <!-- Recent Blog post excerpt -->
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+      <div id="blog-items">
+        <ul class="list-unstyled">
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url | prepend: site.url }}"><h2>{{ post.title }}</h2></a>
+              <p>Posted at: {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • By: {{ post.author }}{% endif %}</p>
+              {{post.excerpt}} 
+              <a href="{{ post.url | prepend: site.url }}">Read more</a>
+            </li>
+            <br/>
+            <div class="margin-topbottom hline"></div>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Sidebar -->
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <aside>
+        {% include sidebar.html %}
+      </aside>  
+    </div>
+  </div>
 </div>

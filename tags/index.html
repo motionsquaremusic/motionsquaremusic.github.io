@@ -1,0 +1,43 @@
+---
+layout: default
+title: Tags
+---
+
+<div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>ALL BLOG POST TAGS</h3>
+        </div><!-- /row -->
+    </div><!-- /container -->
+</div>
+
+<div class="container mtb">
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+      {% for tag in site.tags %}
+        <div id="{{ tag | first}}" class="post-by-tag">
+          <h3>{{ tag | first}}</h3>
+          <div class="hline"></div>
+          {% for posts in tag %}
+            <ul>
+            {% for post in posts %}
+              {% if post.url and post.date %}
+                <li>
+                  <a href="{{ post.url | prepend: siteurl }}">{{ post.title }}</a> | {{ post.date | date: "%b %-d, %Y" }}
+                </li>
+              {% endif %}          
+            {% endfor%}
+            </ul>
+          {% endfor %}
+        </div>
+      {% endfor %}  
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col-lg-4 col-md-4 col-sm-2 col-xs-12">
+      <aside>
+        {% include sidebar.html %}
+      </aside>  
+    </div>
+  </div>
+</div>
