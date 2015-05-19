@@ -14,7 +14,7 @@ active: blogs
 
 เป็นการ research ของผมเองจากเว็บบอร์ดต่างประเทศและคนใช้งานหลายๆที่ จนได้ลิสต์ยี่ห้อมาคร่าวๆ สำหรับคนที่ยังไม่มีลำโพงมอนิเตอร์ แนะนำให้เริ่มจากหูฟังก่อนเพราะราคาถูกกว่าครับ
 
-__Open-Back: 
+__Open-Back:__  
 
     * Sennheiser HD 600/650
     
@@ -24,7 +24,7 @@ __Open-Back:
     
     * Beyerdynamic DT 880 Pro
 
-__Closed-Back: 
+__Closed-Back:__  
 
     * Focal Spirit Professional
     
