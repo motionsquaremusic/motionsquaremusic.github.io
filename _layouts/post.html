@@ -12,30 +12,26 @@ layout: default
   </div>
 </div>
 
-<div class="post">
-  <article class="post-content">
-    <div class="container mtb">
-      <div class="row">
-        <!-- Blog content -->
-        <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+<div class="post">  
+  <div class="container mtb">
+    <div class="row">
+      <!-- Blog content -->
+      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+        <article class="post-content">
           {{ content }}
-          <p>Tag: 
-          
-          </p>
-          
-          <div class="hline"></div>
-          <div class="share-post">
-            <h4>Share this:</h4>
-          </div>
-        </div>
-        
-        <!-- Sidebar -->
-        <div class="col-lg-4 col-md-4 col-sm-2 col-xs-12">
-          <aside>
-            {% include sidebar.html %}
-          </aside>
+        </article>
+        <div class="hline"></div>
+        <div class="share-post">
+          <!-- <h4>Share this:</h4> -->
         </div>
       </div>
+      
+      <!-- Sidebar -->
+      <div class="col-lg-4 col-md-4 col-sm-2 col-xs-12">
+        <aside>
+          {% include sidebar.html %}
+        </aside>
+      </div>
     </div>
-  </article>
+  </div>  
 </div>

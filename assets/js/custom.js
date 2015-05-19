@@ -78,6 +78,16 @@
 		setPortfolio();
 	});
 
+  //resize to thumbnail
+	// $(".tagpagelist li img")
+ //  .addClass("img-thumbnail")
+ //  .css({"width":"100px", 
+ //    "height":"auto", 
+ //    "overflow":"hidden"});
+	
+  $(".post-content img").addClass("img-responsive");
+
+
 	// prettyPhoto
 	jQuery(document).ready(function(){
 		jQuery('a[data-gal]').each(function() {
