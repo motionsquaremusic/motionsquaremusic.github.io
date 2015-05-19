@@ -5,7 +5,7 @@ description: Stock music for Game, Film & Multimedia
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.motionsquaremusic.com" # the base hostname & protocol for your site | needs full protocol : http://
-
+permalink: /:categories/:title # blog permalink setup
 
 # Build settings
 markdown: kramdown
