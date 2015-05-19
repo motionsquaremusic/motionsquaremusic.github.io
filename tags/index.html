@@ -14,29 +14,23 @@ title: Tags
 <div class="container mtb">
   <div class="row">
     <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
-
-      <div class="row">
-        {% for tag in site.tags %}
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="post-by-tag">
-              {% assign posttag = tag | first %}
-                <h3>{{ tag | first}}</h3>
-                <div class="hline"></div>
-                {% for posts in tag %}
-                  <ul>
-                  {% for post in posts %}
-                    {% if post.url and post.date %}
-                      <li>
-                        <a href="{{ post.url | prepend: siteurl }}">{{ post.title }}</a> | {{ post.date | date: "%b %-d, %Y" }}
-                      </li>
-                    {% endif %}          
-                  {% endfor%}
-                  </ul>
-                {% endfor %}
-            </div>
-          </div>
-        {% endfor %}  
-      </div>
+      {% for tag in site.tags %}
+        <div id="{{ tag | first}}" class="post-by-tag">
+          <h3>{{ tag | first}}</h3>
+          <div class="hline"></div>
+          {% for posts in tag %}
+            <ul>
+            {% for post in posts %}
+              {% if post.url and post.date %}
+                <li>
+                  <a href="{{ post.url | prepend: siteurl }}">{{ post.title }}</a> | {{ post.date | date: "%b %-d, %Y" }}
+                </li>
+              {% endif %}          
+            {% endfor%}
+            </ul>
+          {% endfor %}
+        </div>
+      {% endfor %}  
     </div>
 
     <!-- Sidebar -->
@@ -47,17 +41,3 @@ title: Tags
     </div>
   </div>
 </div>
-
-<!-- 
-how about change to
-
-- layout use the same as blogs
-- but instead of showing all post, show the selected tag only
-
-for example: choose `tips` the header will show
-
-Blog post with tag "Tips"
-
-then list like a blog page
-
- -->
