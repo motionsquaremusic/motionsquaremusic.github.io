@@ -4,7 +4,7 @@ title:  "การเลือกหูฟังสาย Film Score"
 date:   2015-05-03
 author: Phil_wc
 category: post
-tags: [tips,headphone]
+tags: [hardware]
 active: blogs
 ---
 
@@ -38,4 +38,4 @@ __Closed-Back:__
 
 เว็บนี้ไว้ฟังเสียงตัวอย่างของแต่ละหูฟัง เอาชื่อไปเสิชได้และเปรียบเทียบในแบบที่ชอบครับ <http://www.sonicsense.com/resourcecenter/app/audio>
 
-'-Phil'
+'-Phil Chapavich'
