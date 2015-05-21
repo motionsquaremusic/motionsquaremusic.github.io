@@ -2,11 +2,11 @@
 	Global elements override
 **********************************************/
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
   #blue { margin-top: 100px; }
 }
 
-@media (max-width: 300px) {
+@media all and (max-width: 300px) {
   #blue { margin-top: 100px; }
 }
 
@@ -43,7 +43,9 @@
     url('../fonts/Quark-Light.otf') format('opentype');
 }
 
-/* FONTS */
+/*********************************************
+  HEADINGS, p, a, input
+**********************************************/
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'saraban', sans-serif;
@@ -63,7 +65,7 @@ p {
   font-size:      20px !important;
   line-height:    26px;
   letter-spacing: 0.4px;
-  color:          #384452;
+  color:          #ffffff;
 
   padding:        0;
   margin-top:     10px;
@@ -95,73 +97,9 @@ input[type=submit],input[type=text],input[type=email] {
   font-size:    20px;
 }
 
-/* Quote section */
-
-#quote h1,#quote h2,#quote h3,
-#quote h4,#quote h5,#quote h6 {
-  font-family: 'quark', sans-serif;
-  font-weight: bold;
-}
-
-#quote p, #quote small {
-  font-family: 'quark', sans-serif;
-  font-weight: light;
-}
-
-
-
-
-
-/*********************************************
-  SUB-HEADER
-**********************************************/
-
-#smallheader {
-  background: #121c1e;
-  color: #35d9f9;
-  margin: 70px auto;
-  padding: 25px 0 25px 30px;
-}
-
-
-/* ORIGINAL THEME OVERRIDE */
-/* NAVBAR */
-
-.navbar-default {
-  background: #232b32;
-  border-bottom-color: #35d9f9; 
-}
-
-  .navbar-default .navbar-brand:hover, 
-  .navbar-default .navbar-brand:focus {
-    color: #00b3fe;
-  }
-
-  .navbar-brand {
-    font-family: 'saraban', sans-serif;
-    font-weight: 900;
-    font-size: 30px !important;
-  }
-
-  .navbar-default .navbar-nav > li > a {
-      color: #ffffff;
-      font-weight: bolder;
-      font-size: 20px;
-  }
-
-
-/* FOOTER */
-
-#footerwrap {
-    background: #121c1e;
-}
-
-#footerwrap p {
-    color: #ffffff;
-}
-
 
 /* Button */
+
 .btn-main {
   color: #ffffff;
   background-color: #2d5e67;
@@ -199,7 +137,82 @@ input[type=submit],input[type=text],input[type=email] {
 
 
 /*********************************************
-  Homepage
+  FOOTERS - Appears every page
+**********************************************/
+
+
+#footerwrap { background: #121c1e; }
+#footerwrap p { color: #ffffff; }
+
+
+
+
+
+/*********************************************
+ORIGINAL THEME OVERRIDE 
+**********************************************/
+
+
+/* NAVBAR */
+
+.navbar-default {
+  background: #232b32;
+  border-bottom-color: #35d9f9; 
+}
+
+  .navbar-default .navbar-brand:hover, 
+  .navbar-default .navbar-brand:focus {
+    color: #00b3fe;
+  }
+
+  .navbar-brand {
+    font-family: 'saraban', sans-serif;
+    font-weight: 900;
+    font-size: 30px !important;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+
+
+
+
+/*********************************************
+  Page header meta 
+    - header for non landing/home page
+**********************************************/
+
+#pageheader {
+  background: #121c1e;
+  color: #35d9f9;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 25px 0 25px 15px;
+}
+
+#pageheader-title { padding-left: 15px; }
+#pageheader-meta  { }
+
+/* media queries must defined after default values or it's not working */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  #subheader  { margin-top: 100px; }
+}
+
+@media all and (max-width: 300px) {
+  #subheader  { margin-top: 100px; }
+}
+
+
+
+
+
+/*********************************************
+  Homepage (or Landing page)
 **********************************************/
 
 #headerwrap     { background: #121c1e;  }
@@ -218,6 +231,25 @@ input[type=submit],input[type=text],input[type=email] {
     border-radius: 15px !important;
   }
 
+/* Quote section */
+
+#quote h1,#quote h2,#quote h3,
+#quote h4,#quote h5,#quote h6,
+#testimonial h1,#testimonial h2,#testimonial h3,
+#testimonial h4,#testimonial h5,#testimonial h6 {
+  font-family: 'quark', sans-serif;
+  font-weight: bold;
+}
+
+#quote p, #quote small,
+#testimonial p, #testimonial small {
+  font-family: 'quark', sans-serif;
+  font-weight: light;
+}
+
+/* Motion Square Music introduction*/
+/*Content section 01:*/
+.msm-contentinfomation p { color:#121c1e; }
 
 /*GRID ITEM: music collection GRID*/
 
@@ -285,7 +317,6 @@ input[type=submit],input[type=text],input[type=email] {
   transition: all .2s ease-in-out;
 }
 
-
 #service i:hover{
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -293,6 +324,32 @@ input[type=submit],input[type=text],input[type=email] {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
+
+
+
+
+
+/*********************************************
+  ABOUTUS
+**********************************************/
+
+
+.about-image{
+  display: inline-block;
+  overflow: hidden;
+  opacity: 1;
+
+  transition: all .2s ease-in-out;
+
+}
+
+.about-image:hover{
+  background: #ffffff;
+  opacity: .75;
+}
+
+
+
 
 
 /*********************************************
@@ -312,29 +369,6 @@ input[type=submit],input[type=text],input[type=email] {
     width:  100%;
     margin: 0 auto;
 	}
-
-
-
-
-
-/*********************************************
-	ABOUTUS
-**********************************************/
-
-
-.about-image{
-  display: inline-block;
-  overflow: hidden;
-  opacity: 1;
-
-  transition: all .2s ease-in-out;
-
-}
-
-.about-image:hover{
-  background: #ffffff;
-  opacity: .75;
-}
 
 
 
