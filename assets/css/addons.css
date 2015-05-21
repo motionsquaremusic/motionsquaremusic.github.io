@@ -3,17 +3,86 @@
 **********************************************/
 
 @media (min-width: 768px) and (max-width: 991px) {
-  #blue {
-    margin-top: 100px;
-  }
+  #blue { margin-top: 100px; }
 }
 
-@media (max-width: 767px) { }
 @media (max-width: 300px) {
-  #blue {
-    margin-top: 100px;
-  }
+  #blue { margin-top: 100px; }
 }
+
+/*
+
+Original font from "style.css"
+body {
+    background: #ffffff;
+    margin: 0;
+    height: 100%;
+    color: #384452;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    padding: 0;
+    margin-bottom: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #384452;
+    margin-top: 10px;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    -webkit-transition: background-color .4s linear, color .4s linear;
+    -moz-transition: background-color .4s linear, color .4s linear;
+    -o-transition: background-color .4s linear, color .4s linear;
+    -ms-transition: background-color .4s linear, color .4s linear;
+    transition: background-color .4s linear, color .4s linear;
+}
+*/
+
+
+/* Thai fonts */
+
+/* TH Saraban new by SIPA */
+
+@font-face{
+  font-family: 'saraban';
+  src:
+    url('../fonts/THSarabunNew.ttf') format('truetype'),
+    url('../fonts/THSarabunNew-Bold.ttf') format('truetype'),
+    url('../fonts/THSarabunNew-BoldItalic.ttf') format('truetype'),
+    url('../fonts/THSarabunNew-Italic.ttf') format('truetype');
+}
+
+/* Quark Thai font by Typomancer */
+
+@font-face{
+  font-family: 'quark';
+  src:
+    url('../fonts/Quark-Bold.otf') format('opentype'),
+    url('../fonts/Quark-Light.otf') format('opentype');
+}
+
+
+
+
+/* thai font override */
+
+.testimonial-th { font-family: 'quark',sans-serif;  }
+.content-thaifont { font-family: 'saraban',sans-serif }
+
+
+/* Utilities */
 
 .no-padding { padding: 0 !important;  }
 .no-margin  { margin: 0 !important;   }
@@ -21,12 +90,14 @@
 
 
 
-/* BOOTSTRAP OVERRIDE*/
+/* BOOTSTRAP OVERRIDE */
 
 .navbar-default .navbar-brand:hover, 
 .navbar-default .navbar-brand:focus {
   color: #00b3fe;
 }
+
+
 
 /*********************************************
 	Homepage
@@ -111,6 +182,7 @@
 	SHOWCASE
 **********************************************/
 
+
 /* CAROUSEL OVERRIDE */
 
 #showcase-carousel {
@@ -132,6 +204,7 @@
 	ABOUTUS
 **********************************************/
 
+
 .about-image{
   display: inline-block;
   overflow: hidden;
@@ -142,7 +215,6 @@
 }
 
 .about-image:hover{
-
   background: #ffffff;
   opacity: .75;
 }
