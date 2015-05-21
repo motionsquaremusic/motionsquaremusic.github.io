@@ -1,3 +1,0 @@
-##MotionSquareMusic-Jekyll
----
-Jekyll based
