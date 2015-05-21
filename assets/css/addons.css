@@ -104,7 +104,7 @@ input[type=submit],input[type=text],input[type=email] {
 }
 
 #quote p, #quote small {
-  font-face: 'quark', sans-serif;
+  font-family: 'quark', sans-serif;
   font-weight: light;
 }
 
