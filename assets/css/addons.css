@@ -1,48 +1,334 @@
 /*********************************************
-	Global override
+	Global elements override
 **********************************************/
 
-@media (min-width: 768px) and (max-width: 991px) {
-  #blue {
-    margin-top: 100px;
-  }
+@media all and (min-width: 768px) and (max-width: 991px) {
+  #blue { margin-top: 100px; }
 }
 
-@media (max-width: 767px) { }
-@media (max-width: 300px) {
-  #blue {
-    margin-top: 100px;
-  }
+@media all and (max-width: 300px) {
+  #blue { margin-top: 100px; }
 }
 
-.no-padding { padding: 0 !important;  }
-.no-margin  { margin: 0 !important;   }
-.width-fullcontainer {  width: 100% !important}
+/* Utilities */
 
+.no-padding           {  padding: 0     !important; }
+.no-margin            {  margin:  0     !important; }
+.width-fullcontainer  {  width:   100%  !important; }
 
-
-/* BOOTSTRAP OVERRIDE*/
-
-.navbar-default .navbar-brand:hover, 
-.navbar-default .navbar-brand:focus {
-  color: #00b3fe;
-}
 
 /*********************************************
-	Homepage
+  THAI FONTS + FONT OVERRIDING
 **********************************************/
 
 
-.laptop-teaser {
-  padding: 0;
-  border:15px solid #000;
-  border-radius: 15px !important;
+/* Thai fonts */
+/* TH Saraban new by SIPA */
+
+@font-face{
+  font-family: 'saraban';
+  src:
+    url('../fonts/THSarabunNew.ttf') format('truetype'),
+    url('../fonts/THSarabunNew-Bold.ttf') format('truetype'),
+    url('../fonts/THSarabunNew-BoldItalic.ttf') format('truetype'),
+    url('../fonts/THSarabunNew-Italic.ttf') format('truetype');
+}
+
+/* Quark Thai font by Typomancer */
+
+@font-face{
+  font-family: 'quark';
+  src:
+    url('../fonts/Quark-Bold.otf') format('opentype'),
+    url('../fonts/Quark-Light.otf') format('opentype');
 }
 
 
-/*GRID ITEM: music collection GRID*/
+/*********************************************
+  HEADINGS, p, a, input
+**********************************************/
 
-  .musiccollection{
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'saraban', sans-serif;
+  font-weight: bolder;
+}
+
+h1 {  font-size: 48px; }  
+h2 {  font-size: 40px; }  
+h3 {  font-size: 36px; }  
+h4 {  font-size: 32px; }  
+h5 {  font-size: 28px; }  
+h6 {  font-size: 26px; }  
+
+p {
+  font-family:    'saraban', sans-serif;
+  font-weight:    normal;
+  font-size:      20px !important;
+  line-height:    26px;
+  letter-spacing: 0.4px;
+  color:          #121c1e;
+
+  padding:        0;
+  margin-top:     10px;
+  margin-bottom:  10px;
+}
+
+a {
+  font-family:  'saraban', sans-serif;
+  font-size:    20px;
+  font-weight:  bolder;
+  text-decoration:  none;
+  padding:  0;
+  margin:   0;
+  
+  -webkit-transition: background-color .4s linear, color .4s linear;
+  -moz-transition:    background-color .4s linear, color .4s linear;
+  -o-transition:      background-color .4s linear, color .4s linear;
+  -ms-transition:     background-color .4s linear, color .4s linear;
+  transition:         background-color .4s linear, color .4s linear;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color:#01b2fe;
+}
+
+input[type=submit],input[type=text],input[type=email] {
+  font-family:  'saraban', sans-serif;
+  font-size:    20px;
+}
+
+
+/* Button */
+
+.btn-main {
+  color: #ffffff;
+  background-color: #2d5e67;
+}
+
+.btn-main:hover {
+  color: #ffffff;
+  background-color: #35d9f9;
+}
+
+.btn-theme {
+  color: #ffffff;
+  background-color: #2d5e67;
+  border-color: #384452;
+  margin: 4px;
+}
+
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active,
+.btn-theme.active,
+.open .dropdown-toggle.btn-theme {
+  color: #ffffff;
+  background-color: #35d9f9;
+  border-color: #00b3fe;
+}
+
+/* BOOTSTRAP OVERRIDE */
+
+.btn {  font-size: 20px;  }
+.form-group input[type=email] {  height: 100%;  }
+
+
+/*********************************************
+  Content 
+**********************************************/
+
+.contentbox-bgwhite {
+  background: #ffffff;
+  color: #121c1e;
+}
+
+/* Testimonial, Service */
+.contentbox-bginversed {
+  background: #212b32;
+  color: #ffffff;
+}
+
+/* Music Collection */
+.contentbox-bggrey {
+  background: #efefef;
+  color: #121c1e;
+
+  text-align: center;
+
+  padding-top: 30px;
+}
+
+#testimonial { background: #212b32; }
+
+  #testimonial h1,#testimonial h2,#testimonial h3,
+  #testimonial h4,#testimonial h5,#testimonial h6 {
+    font-family: 'quark', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  #testimonial p, #testimonial small {
+    font-family: 'quark', sans-serif;
+    font-weight: light;
+  }
+
+  #testimonial h1, #testimonial h2 { color: #ffffff; }
+
+  #testimonial h3, #testimonial h4,
+  #testimonial h5, #testimonial h6 { 
+    color: #121c1e; 
+  }
+
+
+/* @quote: Quote section */
+
+#quote { background: #35d9f9; }
+
+  #quote h1,#quote h2,#quote h3,
+  #quote h4,#quote h5,#quote h6,
+  #quote p, #quote small {
+    font-family: 'quark', sans-serif;
+    font-weight: bolder;
+  }
+
+  #quote p, #quote small { font-weight: light; }
+
+  #quote h1, #quote h2 { color: #ffffff; }
+  #quote h3, #quote h4, #quote h5, #quote h6 { color: #121c1e; }
+
+
+
+
+
+/*********************************************
+ORIGINAL THEME OVERRIDE 
+**********************************************/
+
+
+/* NAVBAR */
+
+.navbar-default {
+  background: #232b32;
+  border-bottom-color: #35d9f9; 
+}
+
+  .navbar-default .navbar-brand:hover, 
+  .navbar-default .navbar-brand:focus {
+    color: #00b3fe;
+  }
+
+  .navbar-brand {
+    font-family: 'saraban', sans-serif;
+    font-weight: 900;
+    font-size: 30px !important;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  .navbar-default .navbar-collapse, 
+  .navbar-default .navbar-form {
+      border-color: #35d9f9;
+  }
+
+
+
+
+
+/*********************************************
+  FOOTERS - Appears every page
+**********************************************/
+
+
+#footerwrap { background: #121c1e; }
+#footerwrap p { color: #ffffff; }
+
+
+
+
+
+/*********************************************
+  @pageheader :Page header meta 
+    - header for non landing/home page
+**********************************************/
+
+
+#pageheader {
+  background: #121c1e;
+  color: #35d9f9;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 25px 0;
+}
+
+  #pageheader .page-title, 
+  #pageheader .post-title { 
+    margin-left: 15px; 
+  }
+
+
+/* media queries must defined after default values or it's not working */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  #pageheader  { margin-top: 100px; }
+}
+
+@media all and (max-width: 300px) {
+  #pageheader  { margin-top: 100px; }
+}
+
+
+
+
+
+/*********************************************
+  Homepage (or Landing page)
+**********************************************/
+
+#headerwrap { background: #121c1e;  }
+
+  #headerwrap h1, #headerwrap h2, #headerwrap h3,
+  #headerwrap h4, #headerwrap h5, #headerwrap h6 { 
+    color: #35d9f9; 
+  }
+
+  #headerwrap p { color: #ffffff; }
+
+
+  .laptop-teaser {
+    padding: 0;
+    border:15px solid #000;
+    border-radius: 15px !important;
+  }
+
+
+/*music collection GRID*/
+
+#musiccollection-container {
+  background: #efefef;
+  color: #121c1e;
+}
+
+  #musiccollection-container h3 { color: #121c1e; }
+  #musiccollection-container p  { color: #121c1e; }
+
+/*<sections>*/
+#musiccollections { margin-top: 30px; }
+
+#portfoliowrap {
+  background: #efefef;
+  color: #121c1e;
+}
+
+  #portfoliowrap h3 { color: #121c1e; }
+  #portfoliowrap p  { color: #121c1e; }
+
+
+  .musiccollection {
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -51,44 +337,44 @@
     transition: all 1s ease-in-out;
   }
 
-.musiccollection .musiccollection-text{
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-}
-  .musiccollection:hover .musiccollection-text{
-    z-index: 1;
-    display: inline;
+  .musiccollection .musiccollection-text {
     position: absolute;
-    top: 0;
-    left: 0;
     bottom: 0;
-    right: 0;
-
-    line-height: 10;
-    text-align: center;
-    font-size: 36px;
-    color:rgb(37, 93, 118);
-
-    background: #ffffff;
-    opacity: .8;
+    z-index: -1;
   }
+    .musiccollection:hover .musiccollection-text {
+      z-index: 1;
+      display: inline;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      line-height: 10;
+      text-align: center;
+      font-size: 36px;
+      color:rgb(37, 93, 118);
+
+      background: #ffffff;
+      opacity: .8;
+    }
 
   /* music collection modal*/
 
   #portfolio-modal-infographics,
   #portfolio-modal-altrock,
-  #portfolio-modal-altrock{
-      display: none;
+  #portfolio-modal-altrock {
+    display: none; 
   }
 
 
 /* service icon */
 
 #service i {
-    color: #00b3fe;
-    font-size: 60px;
-    padding: 15px;
+  color: #00b3fe;
+  font-size: 60px;
+  padding: 15px;
 
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -96,7 +382,6 @@
   -ms-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
-
 
 #service i:hover{
   -webkit-transform: scale(1.2);
@@ -107,9 +392,36 @@
 }
 
 
+
+
+
+/*********************************************
+  ABOUTUS
+**********************************************/
+
+
+.about-image{
+  display: inline-block;
+  overflow: hidden;
+  opacity: 1;
+
+  transition: all .2s ease-in-out;
+
+}
+
+.about-image:hover{
+  background: #ffffff;
+  opacity: .75;
+}
+
+
+
+
+
 /*********************************************
 	SHOWCASE
 **********************************************/
+
 
 /* CAROUSEL OVERRIDE */
 
@@ -129,36 +441,15 @@
 
 
 /*********************************************
-	ABOUTUS
-**********************************************/
-
-.about-image{
-  display: inline-block;
-  overflow: hidden;
-  opacity: 1;
-
-  transition: all .2s ease-in-out;
-
-}
-
-.about-image:hover{
-
-  background: #ffffff;
-  opacity: .75;
-}
-
-
-
-
-
-/*********************************************
   BLOGS & SINGLE BLOGS
 **********************************************/
 
-
+/* SIDE MENU BAR */
 aside>div { margin-bottom: 20px; }
 
+.post-meta { color:#ffffff; }
 .post-meta a:hover { color:#ffffff; }
+
 
 
 
