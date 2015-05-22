@@ -135,55 +135,63 @@ input[type=submit],input[type=text],input[type=email] {
 
 
 /*********************************************
-  Content 
+  @contentbox : Content 
 **********************************************/
 
 .contentbox-bgwhite {
   background: #ffffff;
   color: #121c1e;
+  padding: 100px 0;
 }
+
 
 /* Testimonial, Service */
 .contentbox-bginversed {
   background: #212b32;
   color: #ffffff;
+  padding: 100px 0;
 }
+
 
 /* Music Collection */
 .contentbox-bggrey {
   background: #efefef;
   color: #121c1e;
-
   text-align: center;
-
-  padding-top: 30px;
+  padding: 60px 0 0 0;
 }
 
-#testimonial { background: #212b32; }
+  .contentbox-bggrey .contentbox--info{ padding-bottom: 60px; }
 
-  #testimonial h1,#testimonial h2,#testimonial h3,
-  #testimonial h4,#testimonial h5,#testimonial h6 {
-    font-family: 'quark', sans-serif;
+
+.testimonial { background: #212b32; }
+
+  .testimonial h1,.testimonial h2,.testimonial h3,
+  .testimonial h4,.testimonial h5,.testimonial h6 {
+    font-family: 'saraban', sans-serif;
     font-weight: bolder;
     text-align: center;
   }
 
-  #testimonial p, #testimonial small {
-    font-family: 'quark', sans-serif;
+  .testimonial p, .testimonial small {
+    font-family: 'saraban', sans-serif;
     font-weight: light;
   }
 
-  #testimonial h1, #testimonial h2 { color: #ffffff; }
+  .testimonial h1, .testimonial h2 { color: #ffffff; }
 
-  #testimonial h3, #testimonial h4,
-  #testimonial h5, #testimonial h6 { 
+  .testimonial h3, .testimonial h4,
+  .testimonial h5, .testimonial h6 { 
     color: #121c1e; 
   }
 
 
 /* @quote: Quote section */
 
-#quote { background: #35d9f9; }
+#quote { 
+  background: #35d9f9; 
+  padding: 60px 0;
+}
 
   #quote h1,#quote h2,#quote h3,
   #quote h4,#quote h5,#quote h6,
@@ -311,12 +319,17 @@ ORIGINAL THEME OVERRIDE
 #musiccollection-container {
   background: #efefef;
   color: #121c1e;
+  padding-top: 30px;
 }
 
-  #musiccollection-container h3 { color: #121c1e; }
-  #musiccollection-container p  { color: #121c1e; }
+  #musiccollection-container h3,
+  #musiccollection-container p {
+    color: #121c1e;
+    text-align: center;
+  }
 
 /*<sections>*/
+
 #musiccollections { margin-top: 30px; }
 
 #portfoliowrap {
