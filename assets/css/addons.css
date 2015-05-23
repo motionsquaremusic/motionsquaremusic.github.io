@@ -2,6 +2,13 @@
 	Global elements override
 **********************************************/
 
+@media all and (min-width: 768px) and (max-width: 991px) {
+  #blue { margin-top: 100px; }
+}
+
+@media all and (max-width: 300px) {
+  #blue { margin-top: 100px; }
+}
 
 /* Utilities */
 
@@ -259,7 +266,7 @@ ORIGINAL THEME OVERRIDE
 
 
 #pageheader {
-  background: url(../img/theme/blur-bg-menu.jpg) no-repeat center right;
+  background: #121c1e;
   color: #35d9f9;
   margin-top: 70px;
   margin-bottom: 70px;
@@ -290,7 +297,7 @@ ORIGINAL THEME OVERRIDE
   Homepage (or Landing page)
 **********************************************/
 
-#headerwrap { background: url(../img/theme/blur-bg.jpg) no-repeat center top; }
+#headerwrap { background: #121c1e;  }
 
   #headerwrap h1, #headerwrap h2, #headerwrap h3,
   #headerwrap h4, #headerwrap h5, #headerwrap h6 { 
