@@ -31,7 +31,8 @@
   <link rel="icon" sizes="16x16" type="image/png" href="{{ "/assets/ico/favicon-16x16.png" | prepend: site.url }}" />
   <link rel="icon" sizes="128x128" type="image/png" href="{{ "/assets/ico/favicon-128.png" | prepend: site.url }}" />
 
-  <meta name="application-name" content="&nbsp;"/>
+  <!-- Microsoft meta stuff -->
+  <meta name="application-name" content="Motion Square Music"/>
   <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="mstile-144x144.png" />
   <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
@@ -39,6 +40,12 @@
   <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="{{ site.title }} - {{ site.description }}"/>
+  <meta property="og:type"      content="website" />
+  <meta property="og:title"     content="{{ site.title }} - {{ page.title }}" />
+  <meta property="og:url"       content="{{ site.url}}{{ page.url }}" />
+  <meta property="og:image"     content="{{ "/assets/ico/favicon.ico" | prepend: site.url }}" />
 
   <!-- Twitter Cards -->
   <meta name="twitter:card"        content="summary" />
