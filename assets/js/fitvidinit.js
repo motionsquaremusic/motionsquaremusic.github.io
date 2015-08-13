@@ -1,3 +1,3 @@
 $(function(){
-	$(".youtube-fitvid").fitVids();	
+	$(".fitvidsjs").fitVids();	
 });

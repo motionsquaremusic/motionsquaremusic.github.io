@@ -5,9 +5,16 @@
 
 /* Utilities */
 
-.no-padding           {  padding: 0     !important; }
-.no-margin            {  margin:  0     !important; }
-.width-fullcontainer  {  width:   100%  !important; }
+.no-padding           {  padding:       0     !important; }
+.no-margin            {  margin:        0     !important; }
+.no-margin-top        {  margin-top:    0     !important; }
+.no-margin-right      {  margin-right:  0     !important; }
+.no-margin-bottom     {  margin-bottom: 0     !important; }
+.no-margin-left       {  margin-left:   0     !important; }
+
+.width-fullcontainer  {  width:         100%  !important; }
+
+.shadow-image         {  box-shadow: 1px 1px 5px #000000; }
 
 
 /*********************************************
@@ -141,10 +148,10 @@ input[type=submit],input[type=text],input[type=email] {
 /* Testimonial, Service */
 .contentbox-bginversed {
   background: #212b32;
-  color: #ffffff;
   padding: 100px 0;
 }
 
+.contentbox-bginversed * { color: #ffffff; }
 
 /* Music Collection */
 .contentbox-bggrey {
@@ -433,6 +440,30 @@ ORIGINAL THEME OVERRIDE
 }
 
 
+
+
+
+/*********************************************
+  SERVICES
+**********************************************/
+
+/*background: url(../img/t-back2.jpg) no-repeat center top;*/
+#customcollection-background {
+  background: url(../img/services/customcol.jpg) no-repeat center top;
+  background-size: cover;
+}
+#loopmusic-background {
+  background: url(../img/services/loopmusic.jpg) no-repeat center top;
+  background-size: cover;
+}
+#mockupscore-background {
+  background: url(../img/services/mockup.jpg) no-repeat center top;
+  background-size: cover;
+}
+#stockmusic-background {
+  background: url(../img/services/stock.jpg) no-repeat center top;
+  background-size: cover;
+}
 
 
 
