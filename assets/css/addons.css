@@ -44,6 +44,17 @@
 }
 
 
+.font-override_quark * {
+  font-family: 'quark', sans-serif;
+  font-weight: normal;
+}
+
+.font-override_saraban * {
+  font-family: 'saraban', sans-serif;
+  font-weight: normal; 
+}
+
+
 /*********************************************
   HEADINGS, p, a, input
 **********************************************/
