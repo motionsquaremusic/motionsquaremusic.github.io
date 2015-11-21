@@ -476,6 +476,11 @@ ORIGINAL THEME OVERRIDE
   background-size: cover;
 }
 
+.services .services_description {
+  line-height: 1.4;
+  margin-top: 0;
+}
+
 
 
 /*********************************************
