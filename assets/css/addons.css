@@ -43,17 +43,25 @@
     url('../fonts/Quark-Light.otf') format('opentype');
 }
 
+/* Quark Thai font by Cadson Demak */
 
-.font-override_quark * {
-  font-family: 'quark', sans-serif;
-  font-weight: normal;
+@font-face{
+  font-family: 'cadson';
+  src:
+    url('../fonts/Kanit-ExtraLight.ttf').format('truetype'),
+    url('../fonts/Kanit-ExtraLightItalic.ttf').format('truetype'),
+    url('../fonts/Kanit-Medium.ttf').format('truetype'),
+    url('../fonts/Kanit-MediumItalic.ttf').format('truetype'),
+    url('../fonts/Kanit-SemiBold.ttf').format('truetype'),
+    url('../fonts/Kanit-SemiBoldItalic.ttf').format('truetype');
 }
 
-.font-override_saraban * {
-  font-family: 'saraban', sans-serif;
-  font-weight: normal; 
-}
 
+.font-override_quark * { font-family: 'quark', sans-serif; }
+
+.font-override_saraban * { font-family: 'saraban', sans-serif; }
+
+.font-override_cadson * { font-family: 'cadson', sans-serif; }
 
 /*********************************************
   HEADINGS, p, a, input
