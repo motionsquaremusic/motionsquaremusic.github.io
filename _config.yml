@@ -1,7 +1,7 @@
 # Site settings/ these variables can be accessed by referencing --> site.(below variables)
-title: MotionSquareMusic-Jekyll
+title: "Motion Square Music"
 email: stockmusicth@gmail.com
-description: Stock music for Game, Film & Multimedia
+description: "Stock music for Game, Film & Multimedia"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.motionsquaremusic.com" # the base hostname & protocol for your site | needs full protocol : http://
