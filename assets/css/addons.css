@@ -72,12 +72,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
 }
 
-h1 {  font-size: 48px; }  
-h2 {  font-size: 40px; }  
-h3 {  font-size: 36px; }  
-h4 {  font-size: 32px; }  
-h5 {  font-size: 28px; }  
-h6 {  font-size: 26px; }  
+h1 {  font-size: 48px; }
+h2 {  font-size: 40px; }
+h3 {  font-size: 36px; }
+h4 {  font-size: 32px; }
+h5 {  font-size: 28px; }
+h6 {  font-size: 26px; }
 
 p {
   font-family:    'saraban', sans-serif;
@@ -99,7 +99,7 @@ a {
   text-decoration:  none;
   padding:  0;
   margin:   0;
-  
+
   -webkit-transition: background-color .4s linear, color .4s linear;
   -moz-transition:    background-color .4s linear, color .4s linear;
   -o-transition:      background-color .4s linear, color .4s linear;
@@ -154,7 +154,7 @@ input[type=submit],input[type=text],input[type=email] {
 
 
 /*********************************************
-  @contentbox : Content 
+  @contentbox : Content
 **********************************************/
 
 .contentbox-bgwhite {
@@ -200,15 +200,15 @@ input[type=submit],input[type=text],input[type=email] {
   .testimonial h1, .testimonial h2 { color: #ffffff; }
 
   .testimonial h3, .testimonial h4,
-  .testimonial h5, .testimonial h6 { 
-    color: #121c1e; 
+  .testimonial h5, .testimonial h6 {
+    color: #121c1e;
   }
 
 
 /* @quote: Quote section */
 
-#quote { 
-  background: #35d9f9; 
+#quote {
+  background: #35d9f9;
   padding: 60px 0;
 }
 
@@ -229,7 +229,7 @@ input[type=submit],input[type=text],input[type=email] {
 
 
 /*********************************************
-ORIGINAL THEME OVERRIDE 
+ORIGINAL THEME OVERRIDE
 **********************************************/
 
 
@@ -237,10 +237,10 @@ ORIGINAL THEME OVERRIDE
 
 .navbar-default {
   background: #232b32;
-  border-bottom-color: #35d9f9; 
+  border-bottom-color: #35d9f9;
 }
 
-  .navbar-default .navbar-brand:hover, 
+  .navbar-default .navbar-brand:hover,
   .navbar-default .navbar-brand:focus {
     color: #00b3fe;
   }
@@ -257,7 +257,7 @@ ORIGINAL THEME OVERRIDE
     font-size: 20px;
   }
 
-  .navbar-default .navbar-collapse, 
+  .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
       border-color: #35d9f9;
   }
@@ -279,7 +279,7 @@ ORIGINAL THEME OVERRIDE
 
 
 /*********************************************
-  @pageheader :Page header meta 
+  @pageheader :Page header meta
     - header for non landing/home page
 **********************************************/
 
@@ -297,9 +297,9 @@ ORIGINAL THEME OVERRIDE
   padding: 25px 0;
 }
 
-  #pageheader .page-title, 
-  #pageheader .post-title { 
-    margin-left: 15px; 
+  #pageheader .page-title,
+  #pageheader .post-title {
+    margin-left: 15px;
   }
 
 
@@ -321,7 +321,7 @@ ORIGINAL THEME OVERRIDE
   Homepage (or Landing page)
 **********************************************/
 
-#headerwrap { 
+#headerwrap {
   background: url(../img/theme/blur-bg.jpg) no-repeat center top; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -331,8 +331,8 @@ ORIGINAL THEME OVERRIDE
   }
 
   #headerwrap h1, #headerwrap h2, #headerwrap h3,
-  #headerwrap h4, #headerwrap h5, #headerwrap h6 { 
-    color: #35d9f9; 
+  #headerwrap h4, #headerwrap h5, #headerwrap h6 {
+    color: #35d9f9;
   }
 
   #headerwrap p { color: #ffffff; }
@@ -409,7 +409,7 @@ ORIGINAL THEME OVERRIDE
   #portfolio-modal-infographics,
   #portfolio-modal-altrock,
   #portfolio-modal-altrock {
-    display: none; 
+    display: none;
   }
 
 
