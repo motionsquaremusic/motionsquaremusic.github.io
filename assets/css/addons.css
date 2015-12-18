@@ -109,7 +109,7 @@ input[type=submit],input[type=text],input[type=email] {
 h1, h2, h3, h4 {
   font-family:  'cadson', sans-serif;
   margin: 1.414em 0 0.5em;
-  font-weight: inherit;
+  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -119,9 +119,7 @@ h1 {
 }
 
 h2 {font-size: 4.236em;}
-
 h3 {font-size: 2.618em;}
-
 h4 {font-size: 1.618em;}
 
 small, .font_small {font-size: 0.618em;}
@@ -248,13 +246,13 @@ input[type=submit],input[type=text],input[type=email] {
 
   .testimonial h1,.testimonial h2,.testimonial h3,
   .testimonial h4,.testimonial h5,.testimonial h6 {
-    font-family: 'saraban', sans-serif;
+    font-family: 'cadson', sans-serif;
     font-weight: bolder;
     text-align: center;
   }
 
   .testimonial p, .testimonial small {
-    font-family: 'saraban', sans-serif;
+    font-family: 'cadson', sans-serif;
     font-weight: light;
   }
 
@@ -307,7 +305,7 @@ ORIGINAL THEME OVERRIDE
   }
 
   .navbar-brand {
-    font-family: 'saraban', sans-serif;
+    font-family: 'cadson', sans-serif;
     font-weight: 900;
     font-size: 30px !important;
   }
