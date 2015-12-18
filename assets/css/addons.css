@@ -48,12 +48,12 @@
 @font-face{
   font-family: 'cadson';
   src:
-    url('../fonts/Kanit-ExtraLight.ttf').format('truetype'),
-    url('../fonts/Kanit-ExtraLightItalic.ttf').format('truetype'),
-    url('../fonts/Kanit-Medium.ttf').format('truetype'),
-    url('../fonts/Kanit-MediumItalic.ttf').format('truetype'),
-    url('../fonts/Kanit-SemiBold.ttf').format('truetype'),
-    url('../fonts/Kanit-SemiBoldItalic.ttf').format('truetype');
+    url('../fonts/Kanit-ExtraLight.ttf') format('truetype'),
+    url('../fonts/Kanit-ExtraLightItalic.ttf') format('truetype'),
+    url('../fonts/Kanit-Medium.ttf') format('truetype'),
+    url('../fonts/Kanit-MediumItalic.ttf') format('truetype'),
+    url('../fonts/Kanit-SemiBold.ttf') format('truetype'),
+    url('../fonts/Kanit-SemiBoldItalic.ttf') format('truetype');
 }
 
 
@@ -67,6 +67,66 @@
   HEADINGS, p, a, input
 **********************************************/
 
+html {font-size: 1em;}
+
+body {
+  background-color: white;
+  font-family: 'cadson', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p, a  {
+  font-family: 'cadson', sans-serif;
+  margin-bottom: 1.3em;
+  letter-spacing: 0.4px;
+  color:          #121c1e;
+  padding:        0;
+}
+
+a {
+  padding:  0;
+  margin:   0;
+  -webkit-transition: background-color .4s linear, color .4s linear;
+  -moz-transition:    background-color .4s linear, color .4s linear;
+  -o-transition:      background-color .4s linear, color .4s linear;
+  -ms-transition:     background-color .4s linear, color .4s linear;
+  transition:         background-color .4s linear, color .4s linear;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color:#01b2fe;
+}
+
+
+input[type=submit],input[type=text],input[type=email] {
+  font-family:  'cadson', sans-serif;
+  font-size:    20px;
+}
+
+h1, h2, h3, h4 {
+  font-family:  'cadson', sans-serif;
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 6.854em;
+}
+
+h2 {font-size: 4.236em;}
+
+h3 {font-size: 2.618em;}
+
+h4 {font-size: 1.618em;}
+
+small, .font_small {font-size: 0.618em;}
+
+/*
 h1, h2, h3, h4, h5, h6 {
   font-family: 'saraban', sans-serif;
   font-weight: bolder;
@@ -112,11 +172,12 @@ a:hover, a:focus {
   color:#01b2fe;
 }
 
+
 input[type=submit],input[type=text],input[type=email] {
   font-family:  'saraban', sans-serif;
   font-size:    20px;
 }
-
+*/
 
 /* Button */
 
