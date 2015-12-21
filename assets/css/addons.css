@@ -26,39 +26,109 @@
 /* TH Saraban new by SIPA */
 
 @font-face{
-  font-family: 'saraban';
-  src:
-    url('../fonts/THSarabunNew.ttf') format('truetype'),
-    url('../fonts/THSarabunNew-Bold.ttf') format('truetype'),
-    url('../fonts/THSarabunNew-BoldItalic.ttf') format('truetype'),
-    url('../fonts/THSarabunNew-Italic.ttf') format('truetype');
+  font-family: 'Saraban';
+  src: url('../fonts/THSarabunNew.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'SarabanItalic';
+  src: url('../fonts/THSarabunNew-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'SarabanBold';
+  src: url('../fonts/THSarabunNew-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'SarabanBoldItalic';
+  src: url('../fonts/THSarabunNew-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Quark Thai font by Typomancer */
 
 @font-face{
-  font-family: 'quark';
-  src:
-    url('../fonts/Quark-Bold.otf') format('opentype'),
-    url('../fonts/Quark-Light.otf') format('opentype');
+  font-family: 'QuarkBold';
+  src: url('../fonts/Quark-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* Quark Thai font by Cadson Demak */
+@font-face{
+  font-family: 'QuarkLight';
+  src: url('../fonts/Quark-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Cadson Kanit font by kanit Demak */
+
+/* headings (h1-h6) tags */
+@font-face{
+  font-family: 'KanitBold', sans-serif;
+  src: url('../fonts/Kanit-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face{
-  font-family: 'cadson';
-  src:
-    url('../fonts/Kanit-ExtraLight.ttf') format('truetype'),
-    url('../fonts/Kanit-ExtraLightItalic.ttf') format('truetype'),
+  font-family: 'KanitBoldItalic', sans-serif;
+  src: url('../fonts/Kanit-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-    url('../fonts/Kanit-Light.ttf') format('truetype'),
-    url('../fonts/Kanit-LightItalic.ttf') format('truetype'),
-    url('../fonts/Kanit-Regular.ttf') format('truetype'),
+/* b, strong tag */
+@font-face{
+  font-family: 'KanitMedium', sans-serif;
+  src: url('../fonts/Kanit-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-    url('../fonts/Kanit-Medium.ttf') format('truetype'),
-    url('../fonts/Kanit-MediumItalic.ttf') format('truetype'),
-    url('../fonts/Kanit-SemiBold.ttf') format('truetype'),
-    url('../fonts/Kanit-SemiBoldItalic.ttf') format('truetype');
+@font-face{
+  font-family: 'KanitMediumItalic', sans-serif;
+  src: url('../fonts/Kanit-MediumItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* a tag */
+@font-face{
+  font-family: 'KanitRegular', sans-serif;
+  src: url('../fonts/Kanit-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'KanitItalic', sans-serif;
+  src: url('../fonts/Kanit-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* p tag */
+@font-face{
+  font-family: 'KanitLight', sans-serif;
+  src: url('../fonts/Kanit-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'KanitLightItalic', sans-serif;
+  src: url('../fonts/Kanit-LightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
@@ -66,7 +136,7 @@
 
 .font-override_saraban * { font-family: 'saraban', sans-serif; }
 
-.font-override_cadson * { font-family: 'cadson', sans-serif; }
+.font-override_kanit * { font-family: 'KanitRegular', sans-serif; }
 
 /*********************************************
   HEADINGS, p, a, input
@@ -76,21 +146,23 @@ html {font-size: 1em;}
 
 body {
   background-color: white;
-  font-family: 'cadson', sans-serif;
-  font-weight: 400;
+  font-family: 'KanitRegular', sans-serif;
   line-height: 1.45;
   color: #333;
 }
 
+p {
+  font-family: 'KanitLight', sans-serif;
+}
+
 p, a  {
-  font-family: 'cadson', sans-serif;
   margin-bottom: 1.3em;
-  font-weight: 600;
   color:          #121c1e;
   padding:        0;
 }
 
 a {
+  font-family: 'KanitRegular', sans-serif;
   padding:  0;
   margin:   0;
   -webkit-transition: background-color .4s linear, color .4s linear;
@@ -107,7 +179,7 @@ a:hover, a:focus {
 
 
 input[type=submit],input[type=text],input[type=email] {
-  font-family: 'cadson', sans-serif;
+  font-family: 'KanitRegular', sans-serif;
 }
 
 h1, h2, {
@@ -125,7 +197,7 @@ h2 {font-size: 4.236em;}
 h3 {font-size: 2.618em;}
 h4 {font-size: 1.618em;}
 
-h1, h2, h3, h4, h5, h6 { font-family: 'cadson', sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'KanitBold', sans-serif; }
 
 small, .font_small {font-size: 0.618em;}
 
@@ -202,13 +274,13 @@ small, .font_small {font-size: 0.618em;}
 
   .testimonial h1,.testimonial h2,.testimonial h3,
   .testimonial h4,.testimonial h5,.testimonial h6 {
-    font-family: 'cadson', sans-serif;
+    font-family: 'KanitBold', sans-serif;
     font-weight: bolder;
     text-align: center;
   }
 
   .testimonial p, .testimonial small {
-    font-family: 'cadson', sans-serif;
+    font-family: 'KanitLight', sans-serif;
     font-weight: light;
   }
 
@@ -230,7 +302,7 @@ small, .font_small {font-size: 0.618em;}
   #quote h1,#quote h2,#quote h3,
   #quote h4,#quote h5,#quote h6,
   #quote p, #quote small {
-    font-family: 'quark', sans-serif;
+    font-family: 'QuarkBold', sans-serif;
     font-weight: bolder;
   }
 
@@ -261,7 +333,7 @@ ORIGINAL THEME OVERRIDE
   }
 
   .navbar-brand {
-    font-family: 'cadson', sans-serif;
+    font-family: 'KanitRegular', sans-serif;
     font-weight: 900;
     /*font-size: 30px !important;*/
   }
