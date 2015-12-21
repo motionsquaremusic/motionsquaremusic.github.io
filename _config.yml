@@ -9,3 +9,6 @@ permalink: /:categories/:title # blog permalink setup
 
 # Build settings
 markdown: kramdown
+
+sass:
+  style: compressed
