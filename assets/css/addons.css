@@ -50,6 +50,11 @@
   src:
     url('../fonts/Kanit-ExtraLight.ttf') format('truetype'),
     url('../fonts/Kanit-ExtraLightItalic.ttf') format('truetype'),
+
+    url('../fonts/Kanit-Light.ttf') format('truetype'),
+    url('../fonts/Kanit-LightItalic.ttf') format('truetype'),
+    url('../fonts/Kanit-Regular.ttf') format('truetype'),
+
     url('../fonts/Kanit-Medium.ttf') format('truetype'),
     url('../fonts/Kanit-MediumItalic.ttf') format('truetype'),
     url('../fonts/Kanit-SemiBold.ttf') format('truetype'),
@@ -80,7 +85,7 @@ body {
 p, a  {
   font-family: 'cadson', sans-serif;
   margin-bottom: 1.3em;
-  letter-spacing: 0.4px;
+  font-weight: 600;
   color:          #121c1e;
   padding:        0;
 }
@@ -102,10 +107,10 @@ a:hover, a:focus {
 
 
 input[type=submit],input[type=text],input[type=email] {
-  font-family:  'cadson', sans-serif;
+  font-family: 'cadson', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, {
   margin: 1.414em 0 0.5em;
   font-weight: 600;
   line-height: 1.2;
@@ -123,59 +128,6 @@ h4 {font-size: 1.618em;}
 h1, h2, h3, h4, h5, h6 { font-family: 'cadson', sans-serif; }
 
 small, .font_small {font-size: 0.618em;}
-
-/*
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'saraban', sans-serif;
-  font-weight: bolder;
-}
-
-h1 {  font-size: 48px; }
-h2 {  font-size: 40px; }
-h3 {  font-size: 36px; }
-h4 {  font-size: 32px; }
-h5 {  font-size: 28px; }
-h6 {  font-size: 26px; }
-
-p {
-  font-family:    'saraban', sans-serif;
-  font-weight:    normal;
-  font-size:      20px !important;
-  line-height:    26px;
-  letter-spacing: 0.4px;
-  color:          #121c1e;
-
-  padding:        0;
-  margin-top:     10px;
-  margin-bottom:  10px;
-}
-
-a {
-  font-family:  'saraban', sans-serif;
-  font-size:    20px;
-  font-weight:  bolder;
-  text-decoration:  none;
-  padding:  0;
-  margin:   0;
-
-  -webkit-transition: background-color .4s linear, color .4s linear;
-  -moz-transition:    background-color .4s linear, color .4s linear;
-  -o-transition:      background-color .4s linear, color .4s linear;
-  -ms-transition:     background-color .4s linear, color .4s linear;
-  transition:         background-color .4s linear, color .4s linear;
-}
-
-a:hover, a:focus {
-  text-decoration: none;
-  color:#01b2fe;
-}
-
-
-input[type=submit],input[type=text],input[type=email] {
-  font-family:  'saraban', sans-serif;
-  font-size:    20px;
-}
-*/
 
 /* Button */
 
@@ -209,7 +161,11 @@ input[type=submit],input[type=text],input[type=email] {
 /* BOOTSTRAP OVERRIDE */
 
 .btn {  font-size: 20px;  }
-.form-group input[type=email] {  height: 100%;  }
+
+.form-group input[type=email] {
+  font-size: 20px;
+  height: 100%;
+}
 
 
 /*********************************************
@@ -313,7 +269,7 @@ ORIGINAL THEME OVERRIDE
   .navbar-default .navbar-nav > li > a {
     color: #ffffff;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 1.2em;
   }
 
   .navbar-default .navbar-collapse,
