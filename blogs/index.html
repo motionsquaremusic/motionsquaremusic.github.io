@@ -7,7 +7,7 @@ active: blogs
 <div id="pageheader">
   <div class="container">
     <div class="row">
-      <h3 class="page-title">BLOGS</h3>  
+      <h3 class="page-title">BLOGS</h3>
     </div><!-- /row -->
   </div><!-- /container -->
 </div>
@@ -20,9 +20,9 @@ active: blogs
         <ul class="list-unstyled">
           {% for post in site.posts %}
             <li>
-              <a href="{{ post.url | prepend: site.url }}"><h2>{{ post.title }}</h2></a>
+              <a href="{{ post.url | prepend: site.url }}"><h3>{{ post.title }}</h3></a>
               <p>Posted at: {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • By: {{ post.author }}{% endif %}</p>
-              {{post.excerpt}} 
+              {{post.excerpt}}
               <a href="{{ post.url | prepend: site.url }}">Read more</a>
             </li>
             <br/>
@@ -31,12 +31,12 @@ active: blogs
         </ul>
       </div>
     </div>
-    
+
     <!-- Sidebar -->
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
       <aside>
         {% include sidebar.html %}
-      </aside>  
+      </aside>
     </div>
   </div>
 </div>
