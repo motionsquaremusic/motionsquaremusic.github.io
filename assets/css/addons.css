@@ -22,37 +22,6 @@
 **********************************************/
 
 
-/* Thai fonts */
-/* TH Saraban new by SIPA */
-
-@font-face{
-  font-family: 'Saraban';
-  src: url('../fonts/THSarabunNew.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face{
-  font-family: 'SarabanItalic';
-  src: url('../fonts/THSarabunNew-Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face{
-  font-family: 'SarabanBold';
-  src: url('../fonts/THSarabunNew-BoldItalic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face{
-  font-family: 'SarabanBoldItalic';
-  src: url('../fonts/THSarabunNew-BoldItalic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Quark Thai font by Typomancer */
 
 @font-face{
