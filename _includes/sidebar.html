@@ -1,6 +1,6 @@
 <!-- Recent Post -->
-<div class="recent-post">              
-  <h2>Recent Post</h2>
+<div class="recent-post">
+  <h3>Recent Post</h3>
     <ul class="list-unstyled">
     {% for post in site.posts limit:3 %}
       <li>
@@ -12,9 +12,9 @@
 <div class="hline"></div>
 <!-- Blogpost Tags -->
 <div class="blogpost-tags">
-  <h2>All Tags • <small><a href="{{ "/tags" | prepend: site.url }}">View all tags</a></small></h2>
+  <h3>All Tags • <small><a href="{{ "/tags" | prepend: site.url }}">View all tags</a></small></h3>
   {% for tag in site.tags %}
-    {% assign posttag = tag | first %} 
+    {% assign posttag = tag | first %}
       {% comment %}
         filter :first will get the first element of the incoming data
         or just explicitly include filter {{tag | first}}
