@@ -145,8 +145,8 @@ a:hover, a:focus {
   color:#01b2fe;
 }
 
-strong {
-  font-weight: bolder;
+b, strong {
+  font-family: 'KanitMedium';
 }
 
 
