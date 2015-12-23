@@ -42,14 +42,14 @@
 
 /* headings (h1-h6) tags */
 @font-face{
-  font-family: 'KanitBold', sans-serif;
+  font-family: 'KanitBold';
   src: url('../fonts/Kanit-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face{
-  font-family: 'KanitBoldItalic', sans-serif;
+  font-family: 'KanitBoldItalic';
   src: url('../fonts/Kanit-BoldItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -57,14 +57,14 @@
 
 /* b, strong tag */
 @font-face{
-  font-family: 'KanitMedium', sans-serif;
+  font-family: 'KanitMedium';
   src: url('../fonts/Kanit-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face{
-  font-family: 'KanitMediumItalic', sans-serif;
+  font-family: 'KanitMediumItalic';
   src: url('../fonts/Kanit-MediumItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -72,14 +72,14 @@
 
 /* a tag */
 @font-face{
-  font-family: 'KanitRegular', sans-serif;
+  font-family: 'KanitRegular';
   src: url('../fonts/Kanit-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face{
-  font-family: 'KanitItalic', sans-serif;
+  font-family: 'KanitItalic';
   src: url('../fonts/Kanit-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -87,21 +87,21 @@
 
 /* p tag */
 @font-face{
-  font-family: 'KanitLight', sans-serif;
+  font-family: 'KanitLight';
   src: url('../fonts/Kanit-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face{
-  font-family: 'KanitLightItalic', sans-serif;
+  font-family: 'KanitLightItalic';
   src: url('../fonts/Kanit-LightItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 
-.font-override_quark * { font-family: 'quark', sans-serif; }
+.font-override_quark * { font-family: 'QuarkBold', sans-serif; }
 
 .font-override_saraban * { font-family: 'saraban', sans-serif; }
 
@@ -115,7 +115,6 @@ html {font-size: 1em;}
 
 body {
   background-color: white;
-  font-family: 'KanitRegular', sans-serif;
   line-height: 1.45;
   color: #333;
 }
@@ -146,6 +145,10 @@ a:hover, a:focus {
   color:#01b2fe;
 }
 
+strong {
+  font-weight: bolder;
+}
+
 
 input[type=submit],input[type=text],input[type=email] {
   font-family: 'KanitRegular', sans-serif;
@@ -153,7 +156,6 @@ input[type=submit],input[type=text],input[type=email] {
 
 h1, h2, {
   margin: 1.414em 0 0.5em;
-  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -303,8 +305,7 @@ ORIGINAL THEME OVERRIDE
 
   .navbar-brand {
     font-family: 'KanitRegular', sans-serif;
-    font-weight: 900;
-    /*font-size: 30px !important;*/
+    font-weight: bolder;
   }
 
   .navbar-default .navbar-nav > li > a {
