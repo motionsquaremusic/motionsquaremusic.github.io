@@ -25,19 +25,19 @@ title: Tags
                 <li>
                   <a href="{{ post.url | prepend: siteurl }}">{{ post.title }}</a> | {{ post.date | date: "%b %-d, %Y" }}
                 </li>
-              {% endif %}          
+              {% endif %}
             {% endfor%}
             </ul>
           {% endfor %}
         </div>
-      {% endfor %}  
+      {% endfor %}
     </div>
 
     <!-- Sidebar -->
     <div class="col-lg-4 col-md-4 col-sm-2 col-xs-12">
       <aside>
         {% include sidebar.html %}
-      </aside>  
+      </aside>
     </div>
   </div>
 </div>
